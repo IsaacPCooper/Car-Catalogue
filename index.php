@@ -10,6 +10,24 @@
 
 	</head>
 	<body id="top">
+		<nav>
+         <div class="nav-wrapper grey darken-2">
+           <a href="index.html" class="brand-logo gfont1">UI + UX</a>
+           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a class="dropdown-button" href="index.html" data-activates="dropdown1" data-beloworigin="true">UI</a></li>
+             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown2" data-beloworigin="true">UX</a></li>
+             <li><a href="steam.html">Steam</a></li>
+             <li><a href="nint.html">Nintendo</a></li>
+           </ul>
+           <ul class="side-nav" id="mobile-demo">
+             <li><a class="dropdown-button" href="index.html" data-activates="dropdown3" data-beloworigin="true">UI</a></li>
+             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown4" data-beloworigin="true">UX</a></li>
+             <li><a href="steam.html">Steam</a></li>
+             <li><a href="nint.html">Nintendo</a></li>
+      </ul>
+         </div>
+</nav>
 
 		<!-- Header -->
 			<header id="header">
