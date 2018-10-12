@@ -1,7 +1,7 @@
 <!DOCTYPE html>
  <html>
    <head>
-     <title>UI + UX</title>
+     <title>JPA Cars Web</title>
      <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- Import Google Font(s)-->
@@ -52,7 +52,7 @@
        <!--Navbar Begin-->
        <nav>
          <div class="nav-wrapper grey darken-2">
-           <a href="index.html" class="brand-logo gfont1">UI + UX</a>
+           <a href="index.html" class="brand-logo gfont1">JPA Cars</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
              <li><a class="dropdown-button" href="index.html" data-activates="dropdown1" data-beloworigin="true">UI</a></li>
