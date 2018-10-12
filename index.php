@@ -73,15 +73,6 @@
        <main>
        <!--First Paragraph Begin-->
 <!--First Paragraph End-->
-           <div align=center class="row">
-             <div class="col s4"><a class="z-depth-2 btn btn-floating btn-large red darken-2 pulse" href="badui.html" ><i class="material-icons">code</i></a></div>
-             <div class="col s4"><a class="z-depth-2 btn btn-floating btn-large blue darken-2 pulse" href="nui.html"><i class="material-icons">code</i></a></div>
-             <div class="col s4"><a class="z-depth-2 btn btn-floating btn-large green darken-2 pulse" href="gdui.html"><i class="material-icons">code</i></a></div>
-             <div class="col s4 gfont1b"><p>Poor UI</p></div>
-             <div class="col s4 gfont1b"><p>Passable UI</p></div>
-             <div class="col s4 gfont1b"><p>Great UI</p></div>
-</div>
-</div>
 </body>
 </main>
 <!--Footer Start-->
