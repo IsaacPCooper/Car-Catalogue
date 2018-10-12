@@ -1,0 +1,28 @@
+.brand-logo{
+  color: #616161
+}
+.gfont1
+{
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.gfont1b
+{
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+ font-weight: 700;
+}
+.ibg{
+  background-color: #bdc3c7
+}
+.ibg2{
+  background-color: #ffffff
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
