@@ -72,65 +72,7 @@
        <!--Navbar end-->
        <main>
        <!--First Paragraph Begin-->
-       <div class="gfont1b">
-       <div class="container" align=center><h1>UI - Importance Of Interface Design</h1>
-       <p>UIs (User Interfaces) are a direct path between user and product in regards to computer-based development.</p>
-         <p>The quality of a user interface can heavily impact the way a user interacts with a product and can even determine the overall user experience.</p>
-         <p>A well developed UI is developed in a cohesive manner and allows users to clearly see what is going on in terms of navigation and content.</p>
-         <img class="responsive-img" src="assets/leaf.jpeg">
-    <p>Below are dropdown menus overviewing key points in different stages of UI developments, to view key points click on the button referring to the level of UI to see more information:</p>
-    </div>
-
-
-        <!--Collapsilbe Start-->
-        <div class="container">
-        <ul class="ibg2 collapsible" data-collapsible="accordion">
-   <li>
-     <!--Collapse1-->
-     <div class="collapsible-header"><i class="material-icons">code</i>Poor UI</div>
-     <div class="collapsible-body">
-      <span>
-        <ol>
-          <li>Difficult to use</li>
-          <li>Illogical structure</li>
-          <li>Clunky</li>
-        </ol>
-        </span>
-      </div>
-   </li>
-   <!--Collapse1 End-->
-   <li>
-     <!--Collapse2-->
-     <div class="collapsible-header"><i class="material-icons">code</i>Passable UI</div>
-     <div class="collapsible-body">
-       <span>
-         <ol>
-           <li>Usable with minimal difficulty</li>
-           <li>Somewhat structured</li>
-           <li>Some form of basic design</li>
-         </ol>
-       </span>
-     </div>
-   </li>
-   <!--Collpase2 End-->
-   <li>
-     <div class="collapsible-header"><i class="material-icons">code</i>Great UI</div>
-     <div class="collapsible-body">
-       <span>
-         <ol>
-           <li>Easy to use</li>
-           <li>Coherent Design</li>
-           <li>Distinguishable style</li>
-         </ol>
-       </span>
-     </div>
-   </li>
- </ul>
- <p align="center"> Shown below are examples the different types of UI:</p>
-       </div>
-     </div>
 <!--First Paragraph End-->
-
            <div align=center class="row">
              <div class="col s4"><a class="z-depth-2 btn btn-floating btn-large red darken-2 pulse" href="badui.html" ><i class="material-icons">code</i></a></div>
              <div class="col s4"><a class="z-depth-2 btn btn-floating btn-large blue darken-2 pulse" href="nui.html"><i class="material-icons">code</i></a></div>
