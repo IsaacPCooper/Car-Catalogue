@@ -89,7 +89,7 @@
 <footer class="page-footer grey darken-2">
          <div class="container">
            <div class="row">
-             <div class="col l4 offset-l2 s12">
+             <div class="col l4 s12">
                <h5 class="white-text">Links to the developer's online content</h5>
                <ul>
                  <li><a class="grey-text text-lighten-3" href="https://github.com/JordanPCAustin">Github</a></li>
