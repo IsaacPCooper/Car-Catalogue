@@ -72,9 +72,9 @@
              <li><a class="dropdown-button" href="UX.html" data-activates="dropdown3" data-beloworigin="true">Account</a></li>
            </ul>
            <ul class="side-nav" id="mobile-demo">
-             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown4" data-beloworigin="true">Account</a></li>
-             <li><a class="dropdown-button" href="#" data-activates="dropdown5" data-beloworigin="true">Cars</a></li>
-             <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">About Us</a></li>
+             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown4" data-beloworigin="true">Cars</a></li>
+             <li><a class="dropdown-button" href="#" data-activates="dropdown5" data-beloworigin="true">About Us</a></li>
+             <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">Account</a></li>
       </ul>
          </div>
        </nav>
