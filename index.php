@@ -25,28 +25,28 @@
      <body class = "ibg gfont1">
        <!--Dropdown content begin-->
        <ul id="dropdown1" class="dropdown-content">
-         <li><a class="gfont1" href="Index.html">UI Summary</a></li>
-         <li><a class="gfont1" href="badui.html">Bad UI</a></li>
-         <li><a class="gfont1" href="nui.html">Neutral UI</a></li>
-         <li><a class="gfont1" href="gdui.html">Good UI</a></li>
+         <li><a class="gfont1" href="#">UI #1</a></li>
+         <li><a class="gfont1" href="#">#2</a></li>
+         <li><a class="gfont1" href="#">#3</a></li>
+         <li><a class="gfont1" href="#">#4</a></li>
        </ul>
        <ul id="dropdown2" class="dropdown-content">
-         <li><a class="gfont1" href="UX.html">UX Summary</a></li>
-         <li><a class="gfont1" href="badux.html">Poor UX</a></li>
-         <li><a class="gfont1" href="nux.html">Passable UX</a></li>
-         <li><a class="gfont1" href="gdux.html">Great UX</a></li>
+         <li><a class="gfont1" href="#">UI #1</a></li>
+         <li><a class="gfont1" href="#">#2</a></li>
+         <li><a class="gfont1" href="#">#3</a></li>
+         <li><a class="gfont1" href="#">#4</a></li>
        </ul>
        <ul id="dropdown3" class="dropdown-content gfont1">
-         <li><a class="gfont1" href="Index.html">UI Summary</a></li>
-         <li><a href="badui.html">Bad UI</a></li>
-         <li><a href="nui.html">Neutral UI</a></li>
-         <li><a href="gdui.html">Good UI</a></li>
+         <li><a class="gfont1" href="#">UI #1</a></li>
+         <li><a class="gfont1" href="#">#2</a></li>
+         <li><a class="gfont1" href="#">#3</a></li>
+         <li><a class="gfont1" href="#">#4</a></li>
        </ul>
        <ul id="dropdown4" class="dropdown-content gfont1">
-          <li><a class="gfont1" href="UX.html">UX Summary</a></li>
-         <li><a href="badux.html">Poor UX</a></li>
-         <li><a href="nux.html">Passable UX</a></li>
-         <li><a href="gdux.html">Great UX</a></li>
+         <li><a class="gfont1" href="#">UI #1</a></li>
+         <li><a class="gfont1" href="#">#2</a></li>
+         <li><a class="gfont1" href="#">#3</a></li>
+         <li><a class="gfont1" href="#">#4</a></li>
        </ul>
        <!-- Dropdown content end-->
        <!--Navbar Begin-->
@@ -79,23 +79,20 @@
 <footer class="page-footer grey darken-2">
          <div class="container">
            <div class="row">
-             <div class="col l6 s12">
-               <img src="assets/logo.png" height="100px" width="100px">
-             </div>
              <div class="col l4 offset-l2 s12">
                <h5 class="white-text">Links to the developer's online content</h5>
                <ul>
                  <li><a class="grey-text text-lighten-3" href="https://github.com/JordanPCAustin">Github</a></li>
                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jordan-austin-998845141/">LinkedIn</a></li>
-                 <li><a class="grey-text text-lighten-3" href="https://jordanpcaustin.github.io/">Personal Website</a></li>
-                 <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Framework Used: Materialize</a></li>
+                 <li><a class="grey-text text-lighten-3" href="https://jordanpcaustin.github.io/">Personal website of developer </a></li>
+                 <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Framework Used:Materialize</a></li>
                </ul>
              </div>
            </div>
          </div>
          <div class="footer-copyright">
            <div class="container">
-            2017 Jordan P C Austin
+            2019 Jordan P C Austin
            <a class="grey-text text-lighten-4 right" href="#!"></a>
            </div>
          </div>
