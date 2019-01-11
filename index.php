@@ -36,13 +36,25 @@
          <li><a class="gfont1" href="#">#3</a></li>
          <li><a class="gfont1" href="#">#4</a></li>
        </ul>
-       <ul id="dropdown3" class="dropdown-content gfont1">
+       <ul id="dropdown3" class="dropdown-content">
          <li><a class="gfont1" href="#">UI #1</a></li>
          <li><a class="gfont1" href="#">#2</a></li>
          <li><a class="gfont1" href="#">#3</a></li>
          <li><a class="gfont1" href="#">#4</a></li>
        </ul>
        <ul id="dropdown4" class="dropdown-content gfont1">
+         <li><a class="gfont1" href="#">UI #1</a></li>
+         <li><a class="gfont1" href="#">#2</a></li>
+         <li><a class="gfont1" href="#">#3</a></li>
+         <li><a class="gfont1" href="#">#4</a></li>
+       </ul>
+       <ul id="dropdown5" class="dropdown-content gfont1">
+         <li><a class="gfont1" href="#">UI #1</a></li>
+         <li><a class="gfont1" href="#">#2</a></li>
+         <li><a class="gfont1" href="#">#3</a></li>
+         <li><a class="gfont1" href="#">#4</a></li>
+       </ul>
+       <ul id="dropdown6" class="dropdown-content gfont1">
          <li><a class="gfont1" href="#">UI #1</a></li>
          <li><a class="gfont1" href="#">#2</a></li>
          <li><a class="gfont1" href="#">#3</a></li>
@@ -57,10 +69,12 @@
            <ul id="nav-mobile" class="right hide-on-med-and-down">
              <li><a class="dropdown-button" href="index.html" data-activates="dropdown1" data-beloworigin="true">Cars</a></li>
              <li><a class="dropdown-button" href="UX.html" data-activates="dropdown2" data-beloworigin="true">About Us</a></li>
+             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown3" data-beloworigin="true">Account</a></li>
            </ul>
            <ul class="side-nav" id="mobile-demo">
-             <li><a class="dropdown-button" href="#" data-activates="dropdown3" data-beloworigin="true">Cars</a></li>
-             <li><a class="dropdown-button" href="#" data-activates="dropdown4" data-beloworigin="true">About Us</a></li>
+             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown4" data-beloworigin="true">Account</a></li>
+             <li><a class="dropdown-button" href="#" data-activates="dropdown5" data-beloworigin="true">Cars</a></li>
+             <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">About Us</a></li>
       </ul>
          </div>
        </nav>
