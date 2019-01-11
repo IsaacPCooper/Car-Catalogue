@@ -95,7 +95,7 @@
                  <li><a class="grey-text text-lighten-3" href="https://github.com/JordanPCAustin">Github</a></li>
                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jordan-austin-998845141/">LinkedIn</a></li>
                  <li><a class="grey-text text-lighten-3" href="https://jordanpcaustin.github.io/">Personal website of developer </a></li>
-                 <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Framework Used:Materialize</a></li>
+                 <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Framework Used: Materialize</a></li>
                </ul>
              </div>
            </div>
