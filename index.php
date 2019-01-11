@@ -55,16 +55,12 @@
            <a href="index.html" class="brand-logo gfont1">JPA Cars</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
-             <li><a class="dropdown-button" href="index.html" data-activates="dropdown1" data-beloworigin="true">UI</a></li>
-             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown2" data-beloworigin="true">UX</a></li>
-             <li><a href="steam.html">Steam</a></li>
-             <li><a href="nint.html">Nintendo</a></li>
+             <li><a class="dropdown-button" href="index.html" data-activates="dropdown1" data-beloworigin="true">Cars</a></li>
+             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown2" data-beloworigin="true">About Us</a></li>
            </ul>
            <ul class="side-nav" id="mobile-demo">
-             <li><a class="dropdown-button" href="index.html" data-activates="dropdown3" data-beloworigin="true">UI</a></li>
-             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown4" data-beloworigin="true">UX</a></li>
-             <li><a href="steam.html">Steam</a></li>
-             <li><a href="nint.html">Nintendo</a></li>
+             <li><a class="dropdown-button" href="#" data-activates="dropdown3" data-beloworigin="true">Cars</a></li>
+             <li><a class="dropdown-button" href="#" data-activates="dropdown4" data-beloworigin="true">About Us</a></li>
       </ul>
          </div>
        </nav>
