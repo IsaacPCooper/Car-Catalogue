@@ -63,7 +63,7 @@
        <!--Navbar Begin-->
        <nav>
          <div class="nav-wrapper grey darken-2">
-           <a href="index.html" class="left col l4 s12 brand-logo gfont1">JPA Cars</a>
+           <a href="index.html" class="col l4 s12 brand-logo gfont1">JPA Cars</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
              <li><a class="dropdown-button" href="index.html" data-activates="dropdown1" data-beloworigin="true">Cars</a></li>
@@ -81,7 +81,8 @@
        <!--Navbar end-->
        <!--First Paragraph Begin-->
        <main>
-         <h1> TEST HEADER </h1>
+
+         <h1 align="center"> TEST HEADER </h1>
 
        <div class="carousel carousel-slider">
     <a class="carousel-item" href="#one!"><img src="assets/example.png"></a>
