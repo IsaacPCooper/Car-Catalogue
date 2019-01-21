@@ -12,9 +12,6 @@
      <link type="text/css" rel="stylesheet" href="css/myStyleSheet.css">
      <!--Icon-->
      <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-     <script type="text/javascript" src="js/myjs.js"></script>
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <script type="text/javascript" src="js/materialize.min.js"></script>
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    </head>
@@ -79,7 +76,6 @@
        </nav>
        <script> $(".button-collapse").sideNav(); </script>
        <!--Navbar end-->
-         <body>
        <!--First Paragraph Begin-->
        <div class="carousel carousel-slider">
     <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
@@ -87,7 +83,11 @@
     <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
     <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
   </div>
-<!--First Paragraph End-->
+
+<!--SCRIPTS-->
+<script type="text/javascript" src="js/myjs.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 <!--Footer Start-->
 <footer class="page-footer grey darken-2">
