@@ -79,7 +79,6 @@
        </nav>
        <script> $(".button-collapse").sideNav(); </script>
        <!--Navbar end-->
-       <main>
          <body>
        <!--First Paragraph Begin-->
        <div class="carousel carousel-slider">
@@ -90,7 +89,6 @@
   </div>
 <!--First Paragraph End-->
 </body>
-</main>
 <!--Footer Start-->
 <footer class="page-footer grey darken-2">
          <div class="container">
