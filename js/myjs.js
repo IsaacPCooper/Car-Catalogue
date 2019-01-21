@@ -12,3 +12,9 @@ $('.dropdown-button').dropdown({
   $('.carousel.carousel-slider').carousel({fullWidth: true});
 
   $(".button-collapse").sideNav();
+
+
+    var instance = M.Carousel.init({
+      fullWidth: true,
+      indicators: true
+    });
