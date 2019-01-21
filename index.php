@@ -80,6 +80,7 @@
        <script> $(".button-collapse").sideNav(); </script>
        <!--Navbar end-->
        <main>
+         <body>
        <!--First Paragraph Begin-->
        <div class="carousel carousel-slider center">
   <div class="carousel-fixed-item center">
