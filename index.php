@@ -81,16 +81,17 @@
        <!--Navbar end-->
        <!--First Paragraph Begin-->
        <main>
+         <body>
 
          <h1 align="center"> TEST HEADER </h1>
 
-       <div class="carousel carousel-slider">
+     <div class="carousel carousel-slider">
     <a class="carousel-item" href="#one!"><img src="assets/example.png"></a>
     <a class="carousel-item" href="#two!"><img src="assets/example.png"></a>
     <a class="carousel-item" href="#three!"><img src="assets/example.png"></a>
     <a class="carousel-item" href="#four!"><img src="assets/example.png"></a>
   </div>
-
+</body>
 </main>
 </body>
 <!--Footer Start-->
