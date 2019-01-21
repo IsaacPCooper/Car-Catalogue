@@ -105,7 +105,6 @@
   </div>
 </div>
 </main>
-</body>
 <!--Footer Start-->
 <footer class="page-footer grey darken-2">
          <div class="container">
@@ -131,5 +130,5 @@
 <!--Footer End-->
 
 
-
+</body>
  </html>
