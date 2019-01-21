@@ -23,6 +23,7 @@
      <!--Import jQuery before materialize.js-->
      <!--Navbar-->
      <body class = "ibg gfont1">
+       <header>
        <!--Dropdown content begin-->
        <ul id="dropdown1" class="dropdown-content">
          <li><a class="gfont1" href="#">UI #1</a></li>
@@ -78,6 +79,7 @@
       </ul>
          </div>
        </nav>
+     </header>
 
        <!--Navbar end-->
        <!--First Paragraph Begin-->
