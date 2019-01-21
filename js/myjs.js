@@ -12,15 +12,9 @@ $('.dropdown-button').dropdown({
 
   $(".button-collapse").sideNav();
 
-
   $(document).ready(function(){
-   $('.carousel').carousel();
-
-   $('.carousel').carousel();
-   setInterval(function() {
-     $('.carousel').carousel('next');
-   }, 4500);
-});
+      $('.carousel').carousel();
+    });
 
 $('.carousel.carousel-slider').carousel({
    fullWidth: true,
