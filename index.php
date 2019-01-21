@@ -80,6 +80,7 @@
        <script> $(".button-collapse").sideNav(); </script>
        <!--Navbar end-->
        <!--First Paragraph Begin-->
+       <main>
        <div class="carousel carousel-slider">
     <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
     <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
@@ -87,7 +88,7 @@
     <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
   </div>
 
-<!--SCRIPTS-->
+</main>
 </body>
 <!--Footer Start-->
 <footer class="page-footer grey darken-2">
