@@ -81,17 +81,15 @@
        <!--Navbar end-->
        <!--First Paragraph Begin-->
        <main>
-         <body>
 
          <h1 align="center"> TEST HEADER </h1>
 
      <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="assets/example.png"></a>
-    <a class="carousel-item" href="#two!"><img src="assets/example.png"></a>
-    <a class="carousel-item" href="#three!"><img src="assets/example.png"></a>
-    <a class="carousel-item" href="#four!"><img src="assets/example.png"></a>
+    <a class="carousel-item" href="#"><img src="https://comps.canstockphoto.com/businessman-ready-to-commit-suicide-stock-photos_csp8557263.jpg"></a>
+    <a class="carousel-item" href="#"><img src="https://comps.canstockphoto.com/businessman-ready-to-commit-suicide-stock-photos_csp8557263.jpg"></a>
+    <a class="carousel-item" href="#"><img src="https://comps.canstockphoto.com/businessman-ready-to-commit-suicide-stock-photos_csp8557263.jpg"></a>
+    <a class="carousel-item" href="#"><img src="https://comps.canstockphoto.com/businessman-ready-to-commit-suicide-stock-photos_csp8557263.jpg"></a>
   </div>
-</body>
 </main>
 </body>
 <!--Footer Start-->
