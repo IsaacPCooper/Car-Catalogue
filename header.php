@@ -63,7 +63,7 @@
        <!--Navbar Begin-->
        <nav>
          <div class="nav-wrapper grey darken-2">
-           <a href="index.html" class="col l4 s12 brand-logo gfont1">JPA Cars</a>
+           <a href="index.php" class="col l4 s12 brand-logo gfont1">JPA Cars</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
              <li><a class="dropdown-button" href="index.html" data-activates="dropdown1" data-beloworigin="true">Cars</a></li>
