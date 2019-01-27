@@ -1,28 +1,4 @@
-<!DOCTYPE html>
- <html>
-   <head>
-     <title>JPA Cars Web</title>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!-- Import Google Font(s)-->
-     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200 ,700" rel="stylesheet">
-     <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-     <!--Import MyStyleSheet-->
-     <link type="text/css" rel="stylesheet" href="css/myStyleSheet.css">
-     <!--Icon-->
-     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-     <script type="text/javascript" src="js/myjs.js"></script>
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-     <script type="text/javascript" src="js/materialize.js"></script>
-   </head>
-
-     <!--Import jQuery before materialize.js-->
-     <!--Navbar-->
-     <?php
+    <?php
      require "header.php";
      ?>
        <!--Navbar end-->
