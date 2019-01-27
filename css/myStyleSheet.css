@@ -26,3 +26,8 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+input {
+  width: 100%
+  border: 2px solid black;
+}
