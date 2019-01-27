@@ -94,6 +94,8 @@
        <!--Navbar end-->
        <!--First Paragraph Begin-->
        <main>
+         <p> You are Logged out! </p>
+         <p> You are Logged In! </p>
          <!--Body scripts-->
          <script type="text/javascript" language="javascript">
               $( document ).ready(function(){
