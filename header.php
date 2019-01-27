@@ -76,7 +76,7 @@
              <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">Account</a></li>
       </ul>
          </div>
-         <div>
+        <!-- <div>
            <form action ="includes/login.inc.php" method="post">
              <input type = "text" name="mailuid" placeholder="Username/E-mail...">
              <input type = "password" name="mailuid" placeholder="Password">
@@ -86,6 +86,6 @@
            <form action ="includes/logout.inc.php" method="post">
              <button type = "submit" name="logout-submit"> Log Out</button>
            </form>
-         </div>
+         </div> -->
        </nav>
      </header>
