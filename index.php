@@ -78,6 +78,16 @@
              <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">Account</a></li>
       </ul>
          </div>
+         <div>
+           <form action ="includes/login.inc.php" method="post">
+             <input type = "text" name="mailuid" placeholder="Username/E-mail...">
+             <input type = "password" name="mailuid" placeholder="Password">
+             <button type = "submit" name="login-submit"> Login</button>
+           </form>
+           <a href="signup.php">Sign Up</a>
+           <form action ="includes/logout.inc.php" method="post">
+             <button type = "submit" name="logout-submit"> Log Out</button>
+           </form>
        </nav>
      </header>
 
