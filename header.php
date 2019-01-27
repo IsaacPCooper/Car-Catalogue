@@ -86,5 +86,6 @@
            <form action ="includes/logout.inc.php" method="post">
              <button type = "submit" name="logout-submit"> Log Out</button>
            </form>
+         </div>
        </nav>
      </header>
