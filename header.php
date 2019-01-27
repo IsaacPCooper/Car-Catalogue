@@ -38,10 +38,8 @@
          <li><a class="gfont1" href="#">#4</a></li>
        </ul>
        <ul id="dropdown3" class="dropdown-content">
-         <li><a class="gfont1" href="#">Register</a></li>
+         <li><a class="gfont1" href="signup.php">Register</a></li>
          <li><a class="gfont1" href="#">Login</a></li>
-         <li><a class="gfont1" href="#">Account Settings</a></li>
-         <li><a class="gfont1" href="#">Log Out</a></li>
        </ul>
        <ul id="dropdown4" class="dropdown-content gfont1">
          <li><a class="gfont1" href="#">UI #1</a></li>
