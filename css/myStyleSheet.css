@@ -32,11 +32,8 @@ input {
   width: 100%
   border: 2px solid black;
 }
-.formtext
-{
-  ::placeholder
-  {
-    color:#FFFFFF;
-  }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    red;
+     opacity: 1 !important;
 }
