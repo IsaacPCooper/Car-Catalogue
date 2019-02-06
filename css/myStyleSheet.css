@@ -33,7 +33,7 @@ input {
   border: 2px solid black;
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-    color:    red;
+::placeholder { /* WebKit browsers */
+    color:    black;
      opacity: 1 !important;
 }
