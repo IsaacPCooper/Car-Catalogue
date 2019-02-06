@@ -32,3 +32,11 @@ input {
   width: 100%
   border: 2px solid black;
 }
+.formtext
+{
+  ::placeholder
+  {
+    color:white;
+  }
+
+}
