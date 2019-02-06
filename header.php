@@ -18,6 +18,16 @@
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
      <script type="text/javascript" src="js/materialize.min.js"></script>
      <script type="text/javascript" src="js/materialize.js"></script>
+     <script type="text/javascript" language="javascript">
+          $( document ).ready(function(){
+
+              $(".button-collapse").sideNav();//mobile screen menu init
+
+              $('.carousel').carousel(); //carousel init
+
+              $('.carousel-slider').slider({full_width: true});//slider init
+          });
+      </script>
    </head>
 
      <!--Import jQuery before materialize.js-->
