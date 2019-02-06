@@ -39,7 +39,7 @@
        </ul>
        <ul id="dropdown3" class="dropdown-content">
          <li><a class="gfont1" href="signup.php">Register</a></li>
-         <li><a class="gfont1" href="#">Login</a></li>
+         <li><a class="gfont1" href="login.php">Login</a></li>
        </ul>
        <ul id="dropdown4" class="dropdown-content gfont1">
          <li><a class="gfont1" href="#">UI #1</a></li>
@@ -54,8 +54,8 @@
          <li><a class="gfont1" href="#">#4</a></li>
        </ul>
        <ul id="dropdown6" class="dropdown-content gfont1">
-         <li><a class="gfont1" href="#">Register</a></li>
-         <li><a class="gfont1" href="#">Login</a></li>
+         <li><a class="gfont1" href="signup.php">Register</a></li>
+         <li><a class="gfont1" href="login.php">Login</a></li>
        </ul>
        <!-- Dropdown content end-->
        <!--Navbar Begin-->
@@ -64,12 +64,12 @@
            <a href="index.php" class="col l4 s12 brand-logo gfont1">JPA Cars</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
-             <li><a class="dropdown-button" href="index.html" data-activates="dropdown1" data-beloworigin="true">Cars</a></li>
-             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown2" data-beloworigin="true">About Us</a></li>
-             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown3" data-beloworigin="true">Account</a></li>
+             <li><a class="dropdown-button" href="index.php" data-activates="dropdown1" data-beloworigin="true">Cars</a></li>
+             <li><a class="dropdown-button" href="aboutus.php" data-activates="dropdown2" data-beloworigin="true">About Us</a></li>
+             <li><a class="dropdown-button" href="signup.php" data-activates="dropdown3" data-beloworigin="true">Account</a></li>
            </ul>
            <ul class="side-nav" id="mobile-demo">
-             <li><a class="dropdown-button" href="UX.html" data-activates="dropdown4" data-beloworigin="true">Cars</a></li>
+             <li><a class="dropdown-button" href="#" data-activates="dropdown4" data-beloworigin="true">Cars</a></li>
              <li><a class="dropdown-button" href="#" data-activates="dropdown5" data-beloworigin="true">About Us</a></li>
              <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">Account</a></li>
       </ul>
