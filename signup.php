@@ -8,8 +8,8 @@
       <h1 align="center">Signup</h1>
       <form action ="includes/signup.inc.php" method="post">
         <div class="row">
-        <div class="col m6"><input type="text" name="fname" placeholder="First Name"></div>
-        <div class="col m6"><input type="text" name="sname" placeholder="Last Name"></div>
+        <div class="col s6"><input type="text" name="fname" placeholder="First Name"></div>
+        <div class="col s6"><input type="text" name="sname" placeholder="Last Name"></div>
       </div>
         <input type="text" name="fname" placeholder="Date Of Birth: DD/MM/YYYY">
         <input type="text" name="mail" placeholder="E-mail">
