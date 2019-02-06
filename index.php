@@ -4,8 +4,6 @@
        <!--Navbar end-->
        <!--First Paragraph Begin-->
        <main>
-         <p> You are Logged out! </p>
-         <p> You are Logged In! </p>
          <!--Body scripts-->
          <script type="text/javascript" language="javascript">
               $( document ).ready(function(){
@@ -20,10 +18,10 @@
          <h1 align="center"> TEST HEADER </h1>
          <div class="container">
      <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://comps.canstockphoto.com/businessman-ready-to-commit-suicide-stock-photos_csp8557263.jpg"></a>
-    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://comps.canstockphoto.com/businessman-ready-to-commit-suicide-stock-photos_csp8557263.jpg"></a>
-    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://comps.canstockphoto.com/businessman-ready-to-commit-suicide-stock-photos_csp8557263.jpg"></a>
-    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://comps.canstockphoto.com/businessman-ready-to-commit-suicide-stock-photos_csp8557263.jpg"></a>
+    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
+    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
+    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
+    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
   </div>
 </div>
 </main>
