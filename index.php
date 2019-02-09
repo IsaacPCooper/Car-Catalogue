@@ -17,7 +17,7 @@
 </main>
 <!--Footer Start-->
 <?php
-require "footer.php";
+require "includes/footer.php";
  ?>
 </body>
  </html>
