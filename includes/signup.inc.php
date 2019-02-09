@@ -11,24 +11,34 @@ $UserPwd = $_POST['pwd'];
 $UserPwdRepeat = $_POST['pwd-repeat'];
 
 if(empty($UserFName)||empty($UserSName)||empty($UserDOB)||empty($UserEmail)||empty($UserPwd)||empty($UserPwdRepeat)) {
-  header("LOCATION: ../signup.php?error=emptyfields&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB"&mail=".$UserEmail);
+  header("Location: ../signup.php?error=emptyfields&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB"&mail=".$UserEmail);
   exit();
   }
   else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$UserFName) && !preg_match("/^[a-zA-Z]*$/",$UserSName))) {
-  header("LOCATION: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+  header("Location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
   }
   else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)) {
-    header("LOCATION: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+    header("Location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
   }
 
   else if (!preg_match("/^[a-zA-Z]*$/",$UserFName)) {
-    header("LOCATION: ../signup.php?error=invalidfname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+    header("Location: ../signup.php?error=invalidfname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
   }
   else if (!preg_match("/^[a-zA-Z]*$/",$UserSName)) {
-    header("LOCATION: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+    header("Location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
   }
   else if ($UserPwd !== $UserPwdRepeat) {
-    header("LOCATION: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+    header("Location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
   }
-
+  else {
+    $sql = "SELECT UserEmail FROM users WHERE UserEmail=?";
+    $stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+      header("Location: ../signup.php?error=sqlerror");
+      exit();
+    }
+    else {
+      mysqli_stmt_bind_param($stmt,"s");
+    }
+  }
 }
