@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['signup-submit'])) {
+if(is set($_POST['signup-submit'])) {
 
   require 'dbConnect.php';
 

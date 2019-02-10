@@ -1,7 +1,7 @@
 !--FINISH ME--!
 
 <?php
-if(isset($_POST['signup-submit'])) {
+if(is set($_POST['signup-submit'])) {
 
   require 'dbh.inc.php';
 
