@@ -1,26 +1,26 @@
 <?php
-if(isset($_POST['signupBtn'])) {
+if(isset($_POST['signup-submit'])) {
 
-require 'dbh.inc.php';
+  require 'dbh.inc.php';
 
-$UserFName = $_POST['fname'];
-$UserSName = $_POST['sname'];
-$UserDOB = $_POST['DOB'];
-$UserEmail = $_POST['mail'];
-$UserPwd = $_POST['pwd'];
-$UserPwdRepeat = $_POST['pwd-repeat'];
+  $UserFName = $_POST['fname'];
+  $UserSName = $_POST['sname'];
+  $UserDOB = $_POST['DOB'];
+  $UserEmail = $_POST['mail'];
+  $UserPwd = $_POST['pwd'];
+  $UserPwdRepeat = $_POST['pwd-repeat'];
 
-  if(empty($UserFName) || empty($UserSName) || empty($UserDOB) ||empty ($UserEmail) || empty($UserPwd) || empty($UserPwdRepeat))
-  {
-  header("location: ../signup.php?error=emptyfields&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB."&mail".$UserEmail);
-  exit();
+  if(empty($UserFName) || empty($UserSName) || empty($UserDOB) ||empty ($UserEmail) || empty($UserPwd) || empty($UserPwdRepeat)) {
+    header("Location: ../signup.php?error=emptyfields&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB."&mail".$UserEmail);
+    exit();
   }
 
-  else if (!filter_var($UserEmail,FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/", $UserFName) && !preg_match("/^[a-zA-Z]*$/", $UserSName))
+  else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/", $UserFName) && !preg_match("/^[a-zA-Z]*$/", $UserSName))
   {
-  header("location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
-  exit();
+    header("Location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
+    exit();
   }
+
   else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)) {
     header("location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
     exit();
