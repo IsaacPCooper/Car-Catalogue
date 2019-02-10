@@ -64,9 +64,9 @@ $UserPwdRepeat = $_POST['pwd-repeat'];
         }
         else {
           $hashedPwd = password_hash($UserPwd,PASSWORD_DEFAULT)
-          mysqli_stmt_bind_param($stmt,"sss",$UserFName,$UserSName,$UserDOB,$UserEmail);
+          mysqli_stmt_bind_param($stmt,"sss",$UserFName,$UserSName,$UserDOB,$UserEmail,$hashedPwd);
           mysqli_stmt_execute($stmt);
-          header("Location: ../signup.php?error=sqlerror");
+          header("Location: ../signup.php?signup=sucess");
           exit();
 
         }
@@ -75,7 +75,6 @@ $UserPwdRepeat = $_POST['pwd-repeat'];
   }
   mysqli_stmt_close($stmt);
   mysqli_close($conn);
-
 }
 else {
   header("Location: ../signup.php");
