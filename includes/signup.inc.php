@@ -12,30 +12,30 @@ $UserPwdRepeat = $_POST['pwd-repeat'];
 
   if(empty($UserFName) || empty($UserSName) || empty($UserDOB) ||empty ($UserEmail) || empty($UserPwd) || empty($UserPwdRepeat))
   {
-  header("location: ../signup.php?error=emptyfields&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB."&mail=".$UserEmail);
+  header("location: ../signup.php?error=emptyfields&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB."&mail".$UserEmail);
   exit();
   }
 
   else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$UserFName) && !preg_match("/^[a-zA-Z]*$/",$UserSName))
   {
-  header("location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
+  header("location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
   exit();
   }
   else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)) {
-    header("location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
+    header("location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
     exit();
   }
 
   else if (!preg_match("/^[a-zA-Z]*$/",$UserFName)) {
-    header("location: ../signup.php?error=invalidfname&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
+    header("location: ../signup.php?error=invalidfname&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
     exit();
   }
   else if (!preg_match("/^[a-zA-Z]*$/",$UserSName)) {
-    header("location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
+    header("location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
     exit();
   }
   else if ($UserPwd !== $UserPwdRepeat) {
-    header("location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
+    header("location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
     exit();
   }
   else {
