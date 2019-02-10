@@ -28,8 +28,8 @@
         <div align="center">
           <button type="submit" name="signup-submit">Sign Up</button>
         </div>
-      </form>
   </div>
+  </form>
 </body>
 </main>
 
