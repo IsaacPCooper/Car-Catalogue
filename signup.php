@@ -25,7 +25,7 @@
       </div>
     </div>
         <div align="center">
-          <button type = "submit" name = "signupBtn" value = "signupBtn">Sign Up</button>
+          <button type = "submit" name = "signup-submit" value = "signup-submit">Sign Up</button>
         </div>
         </form>
   </div>
