@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['signup-submit'])) {
 
-require 'includes/dbh.inc.php';
+require 'dbh.inc.php';
 
 $UserFName = $_POST['fname'];
 $UserSName = $_POST['sname'];
