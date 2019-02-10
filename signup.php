@@ -8,20 +8,20 @@
       <form method="post" action ="includes/signup.inc.php">
         <div class="row">
         <div class="col s6">
-          <input type="text" name="fname" placeholder="First Name">
+          <input type="text" name="UserFName" placeholder="First Name">
         </div>
         <div class="col s6">
-          <input type="text" name="sname" placeholder="Last Name">
+          <input type="text" name="UserFName" placeholder="Last Name">
         </div>
       </div>
-        <input type="text" name="DOB" placeholder="Date Of Birth: DD/MM/YYYY">
-        <input type="text" name="mail" placeholder="E-mail">
+        <input type="text" name="UserDOB" placeholder="Date Of Birth: DD/MM/YYYY">
+        <input type="text" name="UserEmail" placeholder="E-mail">
       <div class="row">
       <div class="col s6">
-        <input type="password" name="pwd" placeholder="Password">
+        <input type="password" name="UserPwd" placeholder="Password">
       </div>
       <div class="col s6">
-        <input type="password" name="pwd-repeat" placeholder="Repeat Password">
+        <input type="password" name="UserPwd-repeat" placeholder="Repeat Password">
       </div>
     </div>
         <div align="center">
