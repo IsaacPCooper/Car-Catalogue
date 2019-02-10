@@ -18,24 +18,24 @@ $UserPwdRepeat = $_POST['pwd-repeat'];
 
   else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$UserFName) && !preg_match("/^[a-zA-Z]*$/",$UserSName))
   {
-  header("Location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+  header("Location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
   exit();
   }
   else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)) {
-    header("Location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+    header("Location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
     exit();
   }
 
   else if (!preg_match("/^[a-zA-Z]*$/",$UserFName)) {
-    header("Location: ../signup.php?error=invalidfname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+    header("Location: ../signup.php?error=invalidfname&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
     exit();
   }
   else if (!preg_match("/^[a-zA-Z]*$/",$UserSName)) {
-    header("Location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+    header("Location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
     exit();
   }
   else if ($UserPwd !== $UserPwdRepeat) {
-    header("Location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName"&DOB=".$UserDOB);
+    header("Location: ../signup.php?error=invalidsname&fname=".$UserFName."&sname=".$UserSName."&DOB=".$UserDOB);
     exit();
   }
   else {
