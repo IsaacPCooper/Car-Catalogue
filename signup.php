@@ -26,9 +26,9 @@
     </div>
         <div align="center">
           <button type="submit" name="signupBtn" value="signupBtn">Sign Up</button>
+          </form>
         </div>
   </div>
-  </form>
 </main>
 
  <?php
