@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['signup-submit'])) {
+if (isset($_POST['signupBtn'])) {
 
 require 'dbh.inc.php';
 
