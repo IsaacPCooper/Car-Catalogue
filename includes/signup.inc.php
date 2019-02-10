@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['signup-submit'])) {
 
-  require 'dbh.inc.php';
+  require 'dbConnect.php';
 
   $UserFName = $_POST['UserFName'];
   $UserSName = $_POST['UserSName'];

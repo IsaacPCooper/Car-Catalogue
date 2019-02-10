@@ -1,17 +1,19 @@
+!--FINISH ME--!
+
 <?php
 if(isset($_POST['signup-submit'])) {
 
   require 'dbh.inc.php';
 
-  $firstName = $_POST['fname'];
-  $secondName = $_POST['sname'];
-  $DOB = $_POST['DOB'];
-  $email = $_POST['mail'];
-  $password = $_POST['pwd'];
-  $passwordRepeat = $_POST['pwd-repeat'];
+  $UserFName = $_POST['UserFName'];
+  $UserSName = $_POST['UserSName'];
+  $UserDOB = $_POST['UserDOB'];
+  $UserEmail = $_POST['UserEmail'];
+  $UserPwd = $_POST['UserPwd'];
+  $UserPwdRepeat = $_POST['UserPwd-repeat'];
 
   if(empty($firstName) || empty($secondName)) || empty($DOB) || empty($email) || empty($password) {
-    header("Location: ../signup.php?error=emptyfields&fname=".$firstName."&sname".$secondName."&DOB".$DOB."&mail".$email);
+    header("Location: ../signup.php?error=emptyfields&UserFName=".$UserFName."&UserSName".$UserSName."&UserDOB".$UserDOB."&UserEmail".$UserEmail);
     exit();
   }
   }
