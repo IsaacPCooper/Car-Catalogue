@@ -1,4 +1,4 @@
-!--FINISH ME--!
+
 
 <?php
 if(isset($_POST['signup-submit'])) {
@@ -81,3 +81,4 @@ else{
   header("Location: ../signup.php");
   exit();
 }
+?>
