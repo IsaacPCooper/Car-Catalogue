@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['signupBtn'])) {
+if(isset($_POST['signupBtn'])) {
 
 require 'dbh.inc.php';
 
@@ -16,7 +16,7 @@ $UserPwdRepeat = $_POST['pwd-repeat'];
   exit();
   }
 
-  else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/", $UserFName) && !preg_match("/^[a-zA-Z]*$/", $UserSName))
+  else if (!filter_var($UserEmail,FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/", $UserFName) && !preg_match("/^[a-zA-Z]*$/", $UserSName))
   {
   header("location: ../signup.php?error=invalidemail&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB);
   exit();
