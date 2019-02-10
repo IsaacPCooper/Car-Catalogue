@@ -11,7 +11,7 @@ if(isset($_POST['signup-submit'])) {
   $UserPwdRepeat = $_POST['UserPwd-repeat'];
 
   if(empty($UserFName) || empty($UserSName) || empty($UserDOB) ||empty ($UserEmail) || empty($UserPwd) || empty($UserPwdRepeat)) {
-    header("Location: ../signup.php?error=emptyfields&fname=".$UserFName."&sname".$UserSName."&DOB".$UserDOB."&mail".$UserEmail);
+    header("Location: ../signup.php?error=emptyfields&UserFName=".$UserFName."&UserSName".$UserSName."&DOB".$UserDOB."&UserEmail".$UserEmail);
     exit();
   }
 
