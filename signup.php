@@ -5,7 +5,7 @@
 <main>
   <div class="container">
       <h1 align="center">Signup</h1>
-      <form action ="includes/signup.inc.php" method="post">
+      <form action ="includes/signup.inc.btn" method="POST">
         <div class="row">
         <div class="col s6">
           <input type="text" name="fname" placeholder="First Name">
@@ -25,7 +25,7 @@
       </div>
     </div>
         <div align="center">
-          <button class="button" type="submit" name="signupBtn" value="signupBtn">Sign Up</button>
+          <button type="submit" name="signupBtn" value="signupBtn">Sign Up</button>
         </div>
   </div>
   </form>
