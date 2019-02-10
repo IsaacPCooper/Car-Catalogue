@@ -38,7 +38,36 @@ if(empty($UserFName)||empty($UserSName)||empty($UserDOB)||empty($UserEmail)||emp
       exit();
     }
     else {
-      mysqli_stmt_bind_param($stmt,"s");
+      mysqli_stmt_bind_param($stmt,"s",$UserEmail);
+      mysqli_stmt_execute($stmt);
+      mysqli_stmt_store_result($stmt);
+      $resultCheck = mysqli_stmt_num_rows($stmt);
+      if($resultCheck > 0){
+        header("Location: ../signup.php?error=emailtaken");
+        exit();
+      }
+      else {
+        $sql = "INSERT INTO users FROM users(UserFName,UserSName,UserDOB,UserEmail,UserPwd) VALUES(?,?,?,?,?)";
+        $stmt = mysqli_stmt_init($conn);
+        if (!mysqli_stmt_prepare($stmt, $sql)) {
+          header("Location: ../signup.php?error=sqlerror");
+          exit();
+        }
+        else {
+          $hashedPwd = password_hash($UserPwd,PASSWORD_DEFAULT)
+          mysqli_stmt_bind_param($stmt,"sss",$UserFName,$UserSName,$UserDOB,$UserEmail);
+          mysqli_stmt_execute($stmt);
+          header("Location: ../signup.php?error=sqlerror");
+          exit();
+
+        }
+      }
     }
   }
+  mysqli_stmt_close($stmt);
+  mysqli_close($conn);
+
+}
+else {
+  header("Location: ../signup.php");
 }
