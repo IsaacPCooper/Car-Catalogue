@@ -3,7 +3,6 @@
  ?>
 
 <main>
-  <body>
   <div class="container">
       <h1 align="center">Signup</h1>
       <form action ="includes/signup.inc.php" method="post">
@@ -30,7 +29,6 @@
         </div>
   </div>
   </form>
-</body>
 </main>
 
  <?php
