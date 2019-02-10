@@ -5,7 +5,7 @@
 <main>
   <div class="container">
       <h1 align="center">Signup</h1>
-      <form action ="includes/signup.inc.php" method="POST">
+      <form method="post" action ="includes/signup.inc.php" >
         <div class="row">
         <div class="col s6">
           <input type="text" name="fname" placeholder="First Name">
