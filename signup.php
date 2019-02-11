@@ -1,5 +1,5 @@
 <?php
- require "includes/header.php";
+ includes "includes/header.php";
  ?>
 
 <main>
@@ -47,5 +47,5 @@
 </main>
 
  <?php
- require "includes/footer.php";
+ includes"includes/footer.php";
   ?>
