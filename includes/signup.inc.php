@@ -39,12 +39,12 @@ if (isset($_POST['signup-submit'])) {
       exit();
     }
     else {
-      mysqli_stmt_bind_param($stmt,"s",$UserEmail);
+      mysqli_stmt_bind_param($stmt,"s", $UserEmail);
       mysqli_stmt_execute($stmt);
       mysqli_stmt_store_result($stmt);
       $resultCheck = mysqli_stmt_num_rows($stmt);
-      if($resultCheck > 0){
-        header("Location: ../signup.php?error=usertaken");
+      if($resultCheck > 0) {
+        header("Location: ../signup.php?error=usertaken&UserFName=".$UserFName);
         exit();
       }
       //INSERT INTO DB
