@@ -1,7 +1,5 @@
-
-
 <?php
-if(isset($_POST['signup-submit'])) {
+if (isset($_POST['signup-submit'])) {
 
   require 'dbConnect.php';
 
@@ -13,22 +11,22 @@ if(isset($_POST['signup-submit'])) {
   $UserPwdRepeat = $_POST['UserPwd-repeat'];
 
   //Empty Check!
-  if(empty($UserFName) || empty($UserSName)) || empty($UserDOB) || empty($UserEmail) || empty($UserPwd) {
+  if (empty($UserFName) || empty($UserSName)) || empty($UserDOB) || empty($UserEmail) || empty($UserPwd) {
     header("Location: ../signup.php?error=emptyfields&UserFName=".$UserFName."&UserSName".$UserSName."&UserDOB".$UserDOB."&UserEmail".$UserEmail);
     exit();
   }
   //Email Validation
-  else if(!filter_var($UserEmail,FILTER_VALIDATE_EMAIL)) {
+  else if (!filter_var($UserEmail,FILTER_VALIDATE_EMAIL)) {
     header("Location: ../signup.php?error=invalidUserEmail&UserFName=".$UserFName."&UserSName".$UserSName."&UserDOB".$UserDOB);
     exit();
   }
   //Name Checking
-  else if(!preg_match("/^[a-zA-Z]*$/",$UserFName)) {
+  else if (!preg_match("/^[a-zA-Z]*$/",$UserFName)) {
     header("Location: ../signup.php?error=invalidUserFName");
     exit();
   }
   //Password Checking
-  else if ($UserPwd == $UserPwdRepeat) {
+  else if ($UserPwd !== $UserPwdRepeat) {
     header("Location: ../signup.php?error=InvalidUserPwd&UserFName=".$UserFName."&UserSName".$UserSName."&UserDOB".$UserDOB);
     exit();
   }
