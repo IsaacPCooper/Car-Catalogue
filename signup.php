@@ -38,7 +38,7 @@
 </div>
   <!--Password repeat w/ Label-->
 <div class="input-group">
-  <label>Password</label>
+  <label>Repeat Password</label>
   <input type="password" name="UserPwd-repeat">
 </div>
 <div align="center" class="input-group">
