@@ -3,32 +3,47 @@
  ?>
 
 <main>
-  <div class="container">
-      <h1 align="center">Signup</h1>
-      <form class="form-signup" action ="includes/signup.inc.php" method="post">
-        <div class="row">
-        <div class="col s6">
-          <input type="text" name="UserFName" placeholder="First Name">
-        </div>
-        <div class="col s6">
-          <input type="text" name="UserFName" placeholder="Last Name">
-        </div>
-      </div>
-        <input type="text" name="UserDOB" placeholder="Date Of Birth: DD/MM/YYYY">
-        <input type="text" name="UserEmail" placeholder="E-mail">
-      <div class="row">
-      <div class="col s6">
-        <input type="password" name="UserPwd" placeholder="Password">
-      </div>
-      <div class="col s6">
-        <input type="password" name="UserPwd-repeat" placeholder="Repeat Password">
-      </div>
-    </div>
-        <div align="center">
-          <button type = "submit" name = "signup-submit" id = "signup-submit">Sign Up</button>
-        </div>
-        </form>
+  <!--header-->
+  </header>
+  <div align="center"class="header">
+    <h1>Sign Up!</h1>
   </div>
+
+<form method="post" action="signup.inc.php">
+  <!--First Name Input w/ Label-->
+<div class="input-group">
+  <label>First Name</label>
+  <input type="text" name="UserFName">
+</div>
+  <!--Second Name Input w/ Label-->
+<div class="input-group">
+  <label>Second Name</label>
+  <input type="text" name="UserSName">
+</div>
+  <!--DOB Input w/ Label-->
+<div class="input-group">
+  <label>Date Of Birth</label>
+  <input type="text" name="UserDOB">
+</div>
+  <!--Email Input w/ Label-->
+<div class="input-group">
+  <label>Email</label>
+  <input type="text" name="UserEmail">
+</div>
+  <!--Password input w/ Label-->
+<div class="input-group">
+  <label>Password</label>
+  <input type="password" name="UserPwd">
+</div>
+  <!--Password repeat w/ Label-->
+<div class="input-group">
+  <label>Password</label>
+  <input type="password" name="UserPwd-repeat">
+</div>
+<div class="input-group">
+  <button type="submit"name="submit"class="btn">Sign Up</button>
+</div>
+</form>
 </main>
 
  <?php
