@@ -42,7 +42,7 @@
   <input type="password" name="UserPwd-repeat">
 </div>
 <div align="center" class="input-group">
-  <button type="submit"name="signup-submit"class="btn">Sign Up</button>
+  <button type="submit" name="signup-submit" class="btn">Sign Up</button>
 </div>
 </div>
 </form>
