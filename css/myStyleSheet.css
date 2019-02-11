@@ -37,3 +37,7 @@ input {
     color:    black;
      opacity: 1 !important;
 }
+::label{ /* WebKit browsers */
+    color:    black;
+     opacity: 1 !important;
+}
