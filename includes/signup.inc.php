@@ -18,7 +18,7 @@ if(isset($_POST['signup-submit'])) {
     exit();
   }
   //Email Validation + Name validation
-  else if(!filter_var($UserEmail,FILTER_VALIDATE_EMAIL) &&){!preg_match("/^[a-zA-Z]*$/",$UserFName)
+  else if(!filter_var($UserEmail,FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$UserFName)) {
     header("Location: ../signup.php?error=invalidUserEmailUserFName");
     exit();
   }
