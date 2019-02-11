@@ -9,7 +9,7 @@
     <h1>Sign Up!</h1>
   </div>
 
-<form method="post" action="signup.inc.php">
+<form method="post" action="includes/signup.inc.php">
   <!--First Name Input w/ Label-->
 <div class="input-group">
   <label>First Name</label>
