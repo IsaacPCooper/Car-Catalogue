@@ -17,15 +17,12 @@ if(isset($_POST['signup-submit'])) {
     header("Location: ../signup.php?error=emptyfields&UserFName=".$UserFName."&UserSName".$UserSName."&UserDOB".$UserDOB."&UserEmail".$UserEmail);
     exit();
   }
-  //Email Validation + Name validation
-  else if(!filter_var($UserEmail,FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/",$UserFName)) {
-    header("Location: ../signup.php?error=invalidUserEmailUserFName");
-    exit();
-  }
+  //Email Validation
   else if(!filter_var($UserEmail,FILTER_VALIDATE_EMAIL)) {
     header("Location: ../signup.php?error=invalidUserEmail&UserFName=".$UserFName."&UserSName".$UserSName."&UserDOB".$UserDOB);
     exit();
   }
+  //Name Checking
   else if(!preg_match("/^[a-zA-Z]*$/",$UserFName)) {
     header("Location: ../signup.php?error=invalidUserFName");
     exit();
@@ -43,7 +40,7 @@ if(isset($_POST['signup-submit'])) {
       header("Location: ../signup.php?error=sqlerror");
       exit();
     }
-    else{
+    else {
       mysqli_stmt_bind_param($stmt,"s",$UserEmail);
       mysqli_stmt_execute($stmt);
       mysqli_stmt_store_result($stmt);
