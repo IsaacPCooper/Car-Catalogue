@@ -11,6 +11,7 @@
 
 <form method="post" action="includes/signup.inc.php">
   <!--First Name Input w/ Label-->
+  <div class="container">
 <div class="input-group">
   <label>First Name</label>
   <input type="text" name="UserFName">
@@ -42,6 +43,7 @@
 </div>
 <div class="input-group">
   <button type="submit"name="signup-submit"class="btn">Sign Up</button>
+</div>
 </div>
 </form>
 </main>
