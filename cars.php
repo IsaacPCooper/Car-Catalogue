@@ -8,10 +8,10 @@
          <h1 align="center">View our products</h1>
          <div class="container">
      <div class="carousel carousel-slider">
-    <a class="carousel-item responsive-img"><img height="50%" width="50%" src="assets/img/car_1.png"></a>
-    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
-    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
-    <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
+    <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
+    <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
+    <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
+    <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
   </div>
 </div>
 </main>
