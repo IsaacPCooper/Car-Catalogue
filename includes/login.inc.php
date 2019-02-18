@@ -5,7 +5,7 @@ if (isset($_POST['login-submit'])) {
     $mailuid = $_POST['mailuid'];
     $password = $_POST['pwd'];
 //empty field checks
-  if empty($mailuid) || empty($password))
+  if (empty($mailuid) || empty($password))
   {
     header("Location:../login.php?error=emptyfields");
     exit();
