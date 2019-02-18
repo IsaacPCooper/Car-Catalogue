@@ -45,6 +45,7 @@ session_start();
          <li><a class="gfont1" href="#">#4</a></li>
        </ul>
        <ul id="dropdown3" class="dropdown-content">
+         <!-- Hides Register and login if logged in-->
          <?php
               if (isset($_SESSION['UserFName'])) {
                 echo '<li><a class="gfont1" href="#">Change Account</a></li>
@@ -52,8 +53,8 @@ session_start();
               }
     else {
     echo '<li><a class="gfont1" href="signup.php">Register</a></li>
-         <li><a class="gfont1" href="login.php">Login</a></li>'
-       };
+         <li><a class="gfont1" href="login.php">Login</a></li>';
+       }
          ?>
        </ul>
        <ul id="dropdown6" class="dropdown-content gfont1">
