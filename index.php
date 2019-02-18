@@ -7,7 +7,7 @@
          <body>
          <h1 align="center"> Top cars, Top Prices! </h1>
          <div class="container">
-           <img class="responsive-img"src="assets/img/money.jpeg">
+           <img height="50%" width="50% "class="responsive-img"src="assets/img/money.jpeg">
     <div align="center">
       <?php
            if (isset($_SESSION['UserFName'])) {
