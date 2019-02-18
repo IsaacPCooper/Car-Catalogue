@@ -20,12 +20,33 @@ if (isset($_POST['login-submit'])) {
     else {
 
 
-      mysqli_stmt_bind_param($stmt,"ss", $mailuid,$mailuid);
+      mysqli_stmt_bind_param($stmt,"ss", $mailuid,$password);
       mysqli_stmt_execute($stmt);
       $result = mysqli_stmt_get_result($stmt);
       if ($row = mysqli_fetch_assoc($result)) {
-        
+        $pwdCheck = password_verify($password,$row['UserPwd']);
+        if ($pwdCheck == false) {
+          header("Location:../login.php?error=wrongcredentials");
+          exit();
+        }
+        else if($pwdCheck == true) {
+          session_start();
+          $_SESSION['userId'] = $row['idUsers'];
+          $_SESSION['UserFName'] = $row['UserFName'];
+          $_SESSION['UserSName'] = $row['UserSName'];
+          header("Location:../login.php?login=success");
+          exit();
+        }
+        else {
+
+        }
       }
+
+      else {
+        header("Location:../login.php?error=nouser");
+        exit();
+      }
+
     }
 
   }
