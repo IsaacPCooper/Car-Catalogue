@@ -59,10 +59,14 @@ session_start();
            <a href="index.php" class="col l4 s12 brand-logo gfont1">JPA Cars</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
-             <li><a href="cars.php" >Cars</a></li>
+             <?php
+                  if (isset($_SESSION['UserFName'])) {
+                    echo '<li><a href="cars.php" >Cars</a></li>'; }
+                    ?>
              <li><a href="aboutus.php">About Us</a></li>
              <li><a class="dropdown-button" href="signup.php" data-activates="dropdown3" data-beloworigin="true">Account</a></li>
            </ul>
+
            <ul class="side-nav" id="mobile-demo">
              <li><a href="cars">Cars</a></li>
              <li><a href="aboutus.php">About Us</a></li>
