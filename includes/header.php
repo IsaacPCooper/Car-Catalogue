@@ -49,7 +49,7 @@ session_start();
          <?php
               if (isset($_SESSION['UserFName'])) {
                 echo '<li><a class="gfont1" href="#">Change Account</a></li>
-                      <li><a class="gfont1" action="logout.inc.php">Log Out</a></li>';
+                      <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
               }
               else {
                 echo '<li><a class="gfont1" href="signup.php">Register</a></li>
