@@ -9,10 +9,10 @@
          <div class="container">
            <?php
            if (isset($_SESSION['UserFName'])) {
-             echo '<p> You are Logged In! </p>'
+             echo '<p> You are Logged In! </p>';
            }
            else {
-              echo '<p> You are Logged out! </p>'
+              echo '<p> You are Logged out! </p>';
            }
            ?>
      <div class="carousel carousel-slider">
