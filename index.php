@@ -12,6 +12,7 @@
     <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
     <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
     <a class="carousel-item" href="#"><img height="80%" width="80%" src="https://images.pexels.com/photos/1849115/pexels-photo-1849115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
+    </div>
     <div align="center">
       <?php
            if (isset($_SESSION['UserFName'])) {
@@ -23,7 +24,7 @@
            ?>
 </div>
   </div>
-</div>
+
 </main>
 <!--Footer Start-->
 <?php
