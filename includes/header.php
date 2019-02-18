@@ -49,7 +49,7 @@ session_start();
          <?php
               if (isset($_SESSION['UserFName'])) {
                 echo '<li><a class="gfont1" href="#">Change Account</a></li>
-                      <li><a class="gfont1" href="includes/logout.inc.php">Log Out</a></li>';
+                      <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
               }
               else {
                 echo '<li><a class="gfont1" href="signup.php">Register</a></li>
@@ -58,16 +58,9 @@ session_start();
           ?>
        </ul>
        <ul id="dropdown6" class="dropdown-content gfont1">
-         <?php
-              if (isset($_SESSION['UserFName'])) {
-                echo '<li><a class="gfont1" href="#">Change Account</a></li>
-                      <li><a class="gfont1" href="includes/logout.inc.php">Log Out</a></li>';
-              }
-              else {
-                echo '<li><a class="gfont1" href="signup.php">Register</a></li>
-         <li><a class="gfont1" href="login.php">Login</a></li>';
-        }
-          ?>
+         <li><a class="gfont1" href="signup.php">Register</a></li>
+         <li><a class="gfont1" href="login.php">Login</a></li>
+       </ul>
        <!-- Dropdown content end-->
        <!--Navbar Begin-->
        <nav>
@@ -86,7 +79,7 @@ session_start();
            <ul class="side-nav" id="mobile-demo">
              <?php
                   if (isset($_SESSION['UserFName'])) {
-                    echo '<li><a href="cars.php" >Cars</a></li>'; }
+                    echo '<li><a href="cars.php" >Cars</a></li>';}
                     ?>
              <li><a href="aboutus.php">About Us</a></li>
              <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">Account</a></li>
