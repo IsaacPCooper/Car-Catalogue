@@ -32,11 +32,13 @@ if (isset($_POST['login-submit'])) {
           $_SESSION['userId'] = $row['idUsers'];
           $_SESSION['UserFName'] = $row['UserFName'];
           $_SESSION['UserSName'] = $row['UserSName'];
+
           header("Location:../login.php?login=success");
           exit();
         }
         else {
-
+          header("Location:../login.php?error=wrongcredentials");
+          exit();
         }
       }
 
