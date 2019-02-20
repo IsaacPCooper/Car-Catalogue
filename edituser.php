@@ -11,15 +11,25 @@
 
 <form method="post" action="includes/edituser.inc.php">
   <div class="container">
-  <!--DOB Input w/ Label-->
-<div class="input-group">
-  <label>Date Of Birth</label>
-  <input type="text" name="editDOB">
-</div>
+    <!--Adress Input w/ Label-->
+  <div class="input-group">
+    <label>Adress</label>
+    <input type="text" name="editAddress">
+  </div>
+    <!--DOB Input w/ Label-->
+  <div class="input-group">
+    <label>Post Code</label>
+    <input type="text" name="editPostcode">
+  </div>
   <!--Password repeat w/ Label-->
 <div class="input-group">
   <label>Phone Number</label>
   <input type="text" name="editPhone">
+</div>
+<!--DOB Input w/ Label-->
+<div class="input-group">
+<label>Date Of Birth</label>
+<input type="text" name="editDOB">
 </div>
 <div align="center" class="input-group">
   <button type="submit" name="edit-user" class="btn">Sign Up</button>
