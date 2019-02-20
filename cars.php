@@ -21,3 +21,6 @@ require "includes/footer.php";
  ?>
 </body>
  </html>
+
+
+<!--ADD ISSET, ONLY ACESSED THROUGH BUTTON.-->
