@@ -43,7 +43,7 @@
 </div>
 <!--Postcode Input w/ Label-->
 <div class="input-group">
-<label>Address</label>
+<label>Postcode</label>
 <input type="text" name="UserPostcode">
 </div>
   <!--Password input w/ Label-->
