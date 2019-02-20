@@ -32,7 +32,7 @@
 <input type="text" name="editDOB">
 </div>
 <div align="center" class="input-group">
-  <button type="submit" name="edit-user" class="btn">Sign Up</button>
+  <button type="submit" name="edit-user" class="btn">Edit Details</button>
 </div>
 </div>
 </form>

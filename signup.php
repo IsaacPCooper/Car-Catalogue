@@ -36,6 +36,16 @@
   <label>Email</label>
   <input type="text" name="UserEmail">
 </div>
+<!--Address Input w/ Label-->
+<div class="input-group">
+<label>Adress</label>
+<input type="text" name="UserAddress">
+</div>
+<!--Postcode Input w/ Label-->
+<div class="input-group">
+<label>Address</label>
+<input type="text" name="UserPostcode">
+</div>
   <!--Password input w/ Label-->
 <div class="input-group">
   <label>Password</label>
