@@ -48,7 +48,7 @@ session_start();
          <!-- Hides Register and login if logged in-->
          <?php
               if (isset($_SESSION['UserFName'])) {
-                echo '<li><a class="gfont1" href="#">Change Account</a></li>
+                echo '<li><a class="gfont1" href="edituser.php">Change Account</a></li>
                       <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
               }
               else {
