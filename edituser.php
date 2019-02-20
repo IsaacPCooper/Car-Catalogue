@@ -9,7 +9,7 @@
     <h1>Edit User Information</h1>
   </div>
 
-<form method="post" action="includes/signup.inc.php">
+<form method="post" action="includes/edituser.inc.php">
   <div class="container">
   <!--DOB Input w/ Label-->
 <div class="input-group">
