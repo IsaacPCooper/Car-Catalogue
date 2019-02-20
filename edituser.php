@@ -16,6 +16,11 @@
     <label>Adress</label>
     <input type="text" name="editAddress">
   </div>
+  <!--Postcode Input w/ Label-->
+<div class="input-group">
+  <label>Postcode</label>
+  <input type="text" name="editPostcode">
+</div>
     <!--DOB Input w/ Label-->
   <div class="input-group">
     <label>Post Code</label>
