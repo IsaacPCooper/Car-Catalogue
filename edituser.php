@@ -23,8 +23,8 @@
 </div>
     <!--DOB Input w/ Label-->
   <div class="input-group">
-    <label>Post Code</label>
-    <input type="text" name="editPostcode">
+    <label>Date Of Birth</label>
+    <input type="text" name="editDOB">
   </div>
   <!--Password repeat w/ Label-->
 <div class="input-group">
