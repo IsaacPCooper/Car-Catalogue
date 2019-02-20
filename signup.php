@@ -21,6 +21,11 @@
   <label>Second Name</label>
   <input type="text" name="UserSName">
 </div>
+<!--Phone Input w/ Label-->
+<div class="input-group">
+<label>Phone Number</label>
+<input type="text" name="UserPhone">
+</div>
   <!--DOB Input w/ Label-->
 <div class="input-group">
   <label>Date Of Birth</label>
