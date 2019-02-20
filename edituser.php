@@ -31,11 +31,6 @@
   <label>Phone Number</label>
   <input type="text" name="editPhone">
 </div>
-<!--DOB Input w/ Label-->
-<div class="input-group">
-<label>Date Of Birth</label>
-<input type="text" name="editDOB">
-</div>
 <div align="center" class="input-group">
   <button type="submit" name="edit-user" class="btn">Edit Details</button>
 </div>
