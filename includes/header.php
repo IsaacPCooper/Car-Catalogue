@@ -86,7 +86,7 @@ session_start();
 
            <ul class="side-nav" id="mobile-demo">
              <?php
-                  if (isset($_SESSION['userID'])) {
+                  if (isset($_SESSION['UserID'])) {
                     echo '<li><a href="cars.php" >Cars</a></li>';}
                     ?>
              <li><a href="aboutus.php">About Us</a></li>
