@@ -47,7 +47,7 @@ session_start();
        <ul id="dropdown3" class="dropdown-content">
          <!-- Hides Register and login if logged in-->
          <?php
-              if (isset($_SESSION['userID'])) {
+              if (isset($_SESSION['UserEmail'])) {
                 echo '<li><a class="gfont1" href="edituser.php">Change Account</a></li>
                       <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
               }
@@ -59,7 +59,7 @@ session_start();
        </ul>
        <ul id="dropdown6" class="dropdown-content gfont1">
          <?php
-              if (isset($_SESSION['userID'])) {
+              if (isset($_SESSION['UserEmail'])) {
                 echo '<li><a class="gfont1" href="edituser.php">Change Account</a></li>
                       <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
               }

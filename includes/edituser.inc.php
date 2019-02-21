@@ -24,7 +24,7 @@ if (isset($_POST['edit-user'])){
       exit();
     }
     else {
-      $sql = "UPDATE user SET userAddress = ?, userPostCode = ?, userDOB = ? , userPhone = ? WHERE userID = $uID";
+      $sql = "UPDATE user SET UserAddress = ?, UserPostcode = ?, UserDOB = ? , UserPhone = ? WHERE UserID = $uID";
       $stmt = mysqli_stmt_init($conn);
       if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("Location: ../edituser.php?error=SQLError&".$uID);
