@@ -29,7 +29,7 @@ if (isset($_POST['login-submit'])) {
         }
         else if($pwdCheck == true) {
           session_start();
-          $_SESSION['UserId'] = $row['idUsers'];
+          $_SESSION['UserID'] = $row['idUsers'];
           $_SESSION['UserFName'] = $row['UserFName'];
           $_SESSION['UserSName'] = $row['UserSName'];
           $_SESSION['UserEmail'] = $row['UserEmail'];
