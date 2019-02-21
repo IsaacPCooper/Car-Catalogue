@@ -47,7 +47,7 @@ session_start();
        <ul id="dropdown3" class="dropdown-content">
          <!-- Hides Register and login if logged in-->
          <?php
-              if (isset($_SESSION['UserFName'])) {
+              if (isset($_SESSION['userID'])) {
                 echo '<li><a class="gfont1" href="edituser.php">Change Account</a></li>
                       <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
               }
@@ -59,7 +59,7 @@ session_start();
        </ul>
        <ul id="dropdown6" class="dropdown-content gfont1">
          <?php
-              if (isset($_SESSION['UserFName'])) {
+              if (isset($_SESSION['userID'])) {
                 echo '<li><a class="gfont1" href="edituser.php">Change Account</a></li>
                       <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
               }
@@ -77,7 +77,7 @@ session_start();
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
              <?php
-                  if (isset($_SESSION['UserFName'])) {
+                  if (isset($_SESSION['userID'])) {
                     echo '<li><a href="cars.php" >Cars</a></li>'; }
                     ?>
              <li><a href="aboutus.php">About Us</a></li>
@@ -86,7 +86,7 @@ session_start();
 
            <ul class="side-nav" id="mobile-demo">
              <?php
-                  if (isset($_SESSION['UserFName'])) {
+                  if (isset($_SESSION['userID'])) {
                     echo '<li><a href="cars.php" >Cars</a></li>';}
                     ?>
              <li><a href="aboutus.php">About Us</a></li>
