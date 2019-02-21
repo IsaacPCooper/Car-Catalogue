@@ -77,7 +77,7 @@ session_start();
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
              <?php
-                  if (isset($_SESSION['userID'])) {
+                  if (isset($_SESSION['UserID'])) {
                     echo '<li><a href="cars.php" >Cars</a></li>'; }
                     ?>
              <li><a href="aboutus.php">About Us</a></li>
