@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['edit-user'])){
-  $UserID = $_SESSION['userID'];
+  $UserID = $_SESSION['UserID'];
   require 'dbConnect.php';
   $conn = mysqli_connect() or die("Connection Failed" .
   mysqli_error($conn));
@@ -24,7 +24,7 @@ if (isset($_POST['edit-user'])){
       exit();
     }
     else {
-      $sql = "UPDATE user SET UserAddress = ?, UserPostcode = ?, UserDOB = ? , UserPhone = ? WHERE UserID = $uID";
+      $sql = "UPDATE users SET UserAddress = ?, UserPostcode = ?, UserDOB = ? , UserPhone = ? WHERE idUsers = $UserID";
       $stmt = mysqli_stmt_init($conn);
       if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("Location: ../edituser.php?error=SQLError&".$uID);
