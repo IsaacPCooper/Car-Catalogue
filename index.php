@@ -9,11 +9,8 @@
          <div align="center" class="container">
            <img align ="center"height="50%" width="50% "class="responsive-img" src="assets/img/money.jpeg">
       <?php
-           if (isset($_SESSION['UserFName'])) {
+           if (isset($_SESSION['userID'])) {
              echo '<p> You are Logged In! </p>';
-           }
-           else {
-              echo '<p> You are Logged out! </p>';
            }
            ?>
 </div>
