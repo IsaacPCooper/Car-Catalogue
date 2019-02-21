@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['edit-user'])){
-  $UserID = $_SESSION['usersID'];
+  $UserID = $_SESSION['userID'];
   require 'dbConnect.php';
   $conn = mysqli_connect() or die("Connection Failed" .
   mysqli_error($conn));
