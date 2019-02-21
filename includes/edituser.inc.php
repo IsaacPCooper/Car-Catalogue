@@ -1,11 +1,9 @@
 <?php
 session_start();
 if (isset($_POST['edit-user'])){
-  $UserID = $_SESSION['UserID'];
   require 'dbConnect.php';
-  $conn = mysqli_connect() or die("Connection Failed" .
-  mysqli_error($conn));
-
+  
+  $UserID = $_SESSION['UserID'];
   $address = $_POST['editAddress'];
   $postcode = $_POST['editPostcode'];
   $phone = $_POST['editPhone'];
