@@ -23,7 +23,7 @@
                 while($row = mysqli_fetch_assoc($result)) {
                    echo "<div>
 
-                   <img class="img-responsive" src=".$row['carImg'].">
+                   <img src=".$row['carImg'].">
                    <h3>".$row['carMake']."</h3>
                    <p>".$row['carName']."</p>
                    <p>".$row['carYear']."</p>
