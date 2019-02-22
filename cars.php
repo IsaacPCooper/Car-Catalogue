@@ -24,7 +24,7 @@
                    <p>".$row['carType']."</p>
                    <p>".$row['carSize']."</p>
                    <p>".$row['carFuel']."</p>
-                   </div>"
+                   </div>";
                 }
               }
 
