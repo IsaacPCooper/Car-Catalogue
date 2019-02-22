@@ -33,14 +33,6 @@
 
              ?>
            </div>
-         <div class="container">
-     <div class="carousel carousel-slider">
-    <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
-    <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
-    <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
-    <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
-  </div>
-</div>
 </main>
 <!--Footer Start-->
 <?php
