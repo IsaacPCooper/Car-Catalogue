@@ -8,7 +8,27 @@
          <h1 align="center">View our products</h1>
          <form action="search.php" method="post">
            <input type="text" name="search" placeholder="Search">
-           <button type="submit" name="submit-search"></button>
+           <button type="submit" name="submit-search">Search</button>
+           <div class="cotainer">
+             <?php
+              $sql= "SELECT * FROM Cars";
+              $result = mysqli_quey($conn,$sql);
+              $queryResults = mysqli_num_rows($result);
+
+              if($queryResults > 0){
+                while($row = mysqli_fetch_assoc($result)) {
+                   echo "<div>
+                   <h3>".$row['carMake']."</h3>
+                   <p>".$row['carName']."</p>
+                   <p>".$row['carYear']."</p>
+                   <p>".$row['carType']."</p>
+                   <p>".$row['carSize']."</p>
+                   <p>".$row['carFuel']."</p>
+                   </div>"
+                }
+              }
+
+             ?>
          <div class="container">
      <div class="carousel carousel-slider">
     <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
