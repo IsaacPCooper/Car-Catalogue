@@ -10,7 +10,7 @@
            <img align ="center" src="assets/img/money.jpeg">
       <?php
            if (isset($_SESSION['UserID'])) {
-             echo "<h3> You are Logged In! </h3>"
+             echo "<h3> You are Logged In! </h3>";
              echo "<h4> Welcome!".$row['UserFName']."</h4>";
            }
            ?>
