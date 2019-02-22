@@ -11,7 +11,7 @@
       <?php
            if (isset($_SESSION['UserID'])) {
              echo "<h3> You are Logged In! </h3>";
-             echo "<h4> Welcome!".$row['UserFName']."</h4>";
+             echo "<h4> Welcome!".$_SESSION['UserFName']."</h4>";
            }
            ?>
 </div>
