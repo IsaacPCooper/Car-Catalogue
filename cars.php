@@ -13,7 +13,7 @@
            <button type="submit" name="submit-search">Search</button>
          </div>
          </form>
-           <div class="container">
+           <div class="container" align="center">
              <?php
               $sql= "SELECT * FROM cars";
               $result = mysqli_query($conn,$sql);
@@ -30,6 +30,7 @@
                    <p>".$row['carType']."</p>
                    <p>".$row['carSize']."</p>
                    <p>".$row['carFuel']."</p>
+                   </br>
                    </div>";
                 }
               }
