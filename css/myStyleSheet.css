@@ -1,3 +1,7 @@
+img {
+ max-width: 80%;
+ height:auto;
+}
 .brand-logo{
   color: #616161
 }
@@ -43,5 +47,5 @@ label{ /* WebKit browsers */
 }
 .carCard{
   carImg : img-responsive;
-  
+
 }
