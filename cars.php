@@ -9,7 +9,7 @@
          <form action="search.php" method="post">
            <input type="text" name="search" placeholder="Search">
            <button type="submit" name="submit-search">Search</button>
-           <div class="cotainer">
+           <div class="container">
              <?php
               $sql= "SELECT * FROM Cars";
               $result = mysqli_quey($conn,$sql);
@@ -29,6 +29,7 @@
               }
 
              ?>
+           </div>
          <div class="container">
      <div class="carousel carousel-slider">
     <a class="carousel-item responsive-img"><img src="assets/img/car_1.png"></a>
