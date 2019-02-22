@@ -1,5 +1,4 @@
     <?php
-     include "includes/dbConnect.php"
      require "includes/header.php";
      ?>
        <!--Navbar end-->

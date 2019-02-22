@@ -7,6 +7,7 @@
   </header>
   <div align="center"class="header">
     <h1>Log in</h1>
+    
   </div>
 
 <form method="post" action="includes/login.inc.php">
