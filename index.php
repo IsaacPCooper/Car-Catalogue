@@ -7,7 +7,7 @@
          <body>
          <h1 align="center"> Top cars, Top Prices! </h1>
          <div align="center" class="container">
-           <img align ="center" src="assets/img/money.jpeg">
+           <img align ="center" height="80%" src="assets/img/money.jpeg">
       <?php
            if (isset($_SESSION['UserID'])) {
              echo "<h3> You are Logged In! </h3>";
