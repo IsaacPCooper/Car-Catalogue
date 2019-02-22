@@ -15,7 +15,7 @@
            <div class="container">
              <?php
               $sql= "SELECT * FROM cars";
-              $result = mysqli_quey($conn,$sql);
+              $result = mysqli_query($conn,$sql);
               $queryResults = mysqli_num_rows($result);
 
               if($queryResults > 0){
