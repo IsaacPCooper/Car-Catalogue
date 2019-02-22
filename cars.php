@@ -12,7 +12,7 @@
          </form>
            <div class="container">
              <?php
-              $sql= "SELECT * FROM Cars";
+              $sql= "SELECT * FROM cars";
               $result = mysqli_quey($conn,$sql);
               $queryResults = mysqli_num_rows($result);
 
