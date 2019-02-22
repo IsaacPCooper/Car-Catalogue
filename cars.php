@@ -1,5 +1,6 @@
     <?php
      require "includes/header.php";
+     include 'dbConnect.php';
      ?>
        <!--Navbar end-->
        <!--First Paragraph Begin-->
