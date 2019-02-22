@@ -7,7 +7,7 @@
        <main>
          <body>
          <h1 align="center">View our products</h1>
-         <div class="container">
+         <div class="carCard container">
          <form action="search.php" method="post">
            <input type="text" name="search" placeholder="Search">
            <button type="submit" name="submit-search">Search</button>
@@ -30,7 +30,6 @@
                    <p>".$row['carType']."</p>
                    <p>".$row['carSize']."</p>
                    <p>".$row['carFuel']."</p>
-                   </br>
                    </div>";
                 }
               }

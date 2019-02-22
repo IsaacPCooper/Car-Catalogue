@@ -41,3 +41,7 @@ label{ /* WebKit browsers */
     color:    black;
      opacity: 1 !important;
 }
+.carCard{
+  carImg : img-responsive;
+  
+}
