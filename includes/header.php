@@ -38,12 +38,6 @@ session_start();
      <body class = "ibg gfont1">
        <header>
        <!--Dropdown content begin-->
-       <ul id="dropdown1" class="dropdown-content">
-         <li><a class="gfont1" href="#">UI #1</a></li>
-         <li><a class="gfont1" href="#">#2</a></li>
-         <li><a class="gfont1" href="#">#3</a></li>
-         <li><a class="gfont1" href="#">#4</a></li>
-       </ul>
        <ul id="dropdown3" class="dropdown-content">
          <!-- Hides Register and login if logged in-->
          <?php
@@ -80,7 +74,6 @@ session_start();
                   if (isset($_SESSION['UserID'])) {
                     echo '<li><a href="cars.php" >Cars</a></li>'; }
                     ?>
-             <li><a href="aboutus.php">About Us</a></li>
              <li><a class="dropdown-button" href="signup.php" data-activates="dropdown3" data-beloworigin="true">Account</a></li>
            </ul>
 
@@ -89,7 +82,6 @@ session_start();
                   if (isset($_SESSION['UserID'])) {
                     echo '<li><a href="cars.php" >Cars</a></li>';}
                     ?>
-             <li><a href="aboutus.php">About Us</a></li>
              <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">Account</a></li>
       </ul>
          </div>
