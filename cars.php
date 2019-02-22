@@ -6,9 +6,11 @@
        <main>
          <body>
          <h1 align="center">View our products</h1>
+         <div class="container">
          <form action="search.php" method="post">
            <input type="text" name="search" placeholder="Search">
            <button type="submit" name="submit-search">Search</button>
+         </div>
          </form>
            <div class="container">
              <?php
