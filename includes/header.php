@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 <!DOCTYPE html>
  <html>
@@ -43,7 +44,7 @@ session_start();
          <?php
               if (isset($_SESSION['UserEmail'])) {
                 echo '<li><a class="gfont1" href="edituser.php">Change Account</a></li>
-                      <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
+                      <li><a class="gfont1" href="includes/logout.inc.php">Log Out</a></li>';
               }
               else {
                 echo '<li><a class="gfont1" href="signup.php">Register</a></li>
@@ -55,7 +56,7 @@ session_start();
          <?php
               if (isset($_SESSION['UserEmail'])) {
                 echo '<li><a class="gfont1" href="edituser.php">Change Account</a></li>
-                      <li><a class="gfont1" href="logout.inc.php">Log Out</a></li>';
+                      <li><a class="gfont1" href="includes/logout.inc.php">Log Out</a></li>';
               }
               else {
                 echo '<li><a class="gfont1" href="signup.php">Register</a></li>
@@ -80,7 +81,7 @@ session_start();
            <ul class="side-nav" id="mobile-demo">
              <?php
                   if (isset($_SESSION['UserID'])) {
-                    echo '<li><a href="cars.php" >Cars</a></li>';}
+                    echo '<li><a href="cars.php">Cars</a></li>';}
                     ?>
              <li><a class="dropdown-button" href="#" data-activates="dropdown6" data-beloworigin="true">Account</a></li>
       </ul>
