@@ -24,9 +24,9 @@
 if (isset($_POST['submit-search'])){
   $search = mysqli_real_escape_string($conn,$_POST['search']);
   $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
-  $sql2 = "UPDATE users SET UserPSearch = (['PSearch']) WHERE UserID = 'UserID'";
+  $sql2 = "INSERT INTO searches(User_ID,searched) VALUES('USERID','search') WHERE UserID = 'UserID'";
   $_SESSION['PSearch'] = ['search'];
-  $stmt = mysqli_stmt_execute($conn ,$sql3);
+  $stmt = mysqli_stmt_execute($conn ,$sql2);
   $result = mysqli_query($conn ,$sql);
   $queryResult = mysqli_num_rows($result);
 
