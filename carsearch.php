@@ -66,3 +66,8 @@ if (isset($_POST['favourite-search'])){
 }
  ?>
 </div>
+<?php
+require "includes/footer.php";
+ ?>
+</body>
+ </html>
