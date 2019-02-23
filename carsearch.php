@@ -17,7 +17,6 @@
      <form action="carsearch.php" method="POST">
        <input type="text" name="search" placeholder="Search">
        <button type="submit" name="submit-search">Search</button>
-       <button type='submit' name='favourite-search'>Favourite!</button>
      </div>
      </form>
 <div class="container" align="center">
@@ -29,7 +28,7 @@ $keyword = $_POST['search'];
 
 if (isset($_SESSION['UserID'])){
 $sql3 = "SELECT * FROM searches WHERE UserID = User_ID";
-$bigresult = mysqli_query($conn ,$sql);
+$bigresult = mysqli_query($conn ,$sql3);
 $bigqueryResult = mysqli_num_rows($bigresult);
 
 
@@ -77,12 +76,6 @@ if ($queryResult > 0) {
 else {
   echo "There are no results matching your search!";
   }
-}
-if (isset($_POST['favourite-search'])){
-  $stmt = mysqli_stmt_init($conn);
-  $SQL3 = "INSERT INTO users(UserFSearch) VALUES(?) WHERE idUsers = $UserID";
-  mysqli_stmt_bind_param($stmt, "s", $PSearch);
-   mysqli_stmt_execute($stmt);
 }
  ?>
 </div>
