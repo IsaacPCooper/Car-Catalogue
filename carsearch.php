@@ -27,7 +27,7 @@ $PSearch = $row['Searched'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
-$sql3 = "SELECT * FROM searches WHERE User_ID = UserID";
+$sql3 = "SELECT * FROM searches WHERE UserID = User_ID";
 $bigresult = mysqli_query($conn ,$sql);
 $bigqueryResult = mysqli_num_rows($bigresult);
 
