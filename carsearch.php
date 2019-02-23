@@ -27,7 +27,21 @@ $PSearch = $row['Searched'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
+if (isset($_SESSION['UserID'])){
+$sql3 = "SELECT * FROM searches WHERE UserID = User_ID";
+$bigresult = mysqli_query($conn ,$sql);
+$bigqueryResult = mysqli_num_rows($bigresult);
 
+
+
+if ($bigqueryResult > 1) {
+  while($row = mysqli_fetch_assoc($bigresult)) {
+     echo "<div>
+     <h3>Favourite Searched</h3>
+     <p>".$row['searched']."</p>
+     </div>";
+   }
+  }
 
 
 
@@ -45,21 +59,6 @@ if (isset($_POST['submit-search'])){
                      }
                      mysqli_stmt_bind_param($stmt, "ss",$id,$keyword);
                      mysqli_stmt_execute($stmt);
-
-                     $sql3 = "SELECT * FROM searches WHERE UserID = User_ID";
-                     $bigresult = mysqli_query($conn ,$sql);
-                     $bigqueryResult = mysqli_num_rows($bigresult);
-
-
-
-                     if ($bigqueryResult > 1) {
-                       while($row = mysqli_fetch_assoc($bigresult)) {
-                          echo "<div>
-                          <h3>Favourite Searched</h3>
-                          <p>".$row['searched']."</p>
-                          </div>";
-                        }
-                       }
 
 if ($queryResult > 0) {
   while($row = mysqli_fetch_assoc($result)) {
