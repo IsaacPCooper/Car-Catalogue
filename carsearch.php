@@ -2,6 +2,7 @@
  require "includes/header.php";
  include 'includes/dbConnect.php';
  session_start();
+ $UserID = $_SESSION['UserID'];
  //Checks if user is logged in
  if(!isset($_SESSION['UserID'])){
    header("Location:Login.php");
@@ -61,7 +62,7 @@ else {
 }
 if (isset($_POST['favourite-search'])){
   $stmt = mysqli_stmt_init($conn);
-  $SQL3 = "INSERT INTO users(UserFSearch) VALUES (?)";
+  $SQL3 = "INSERT INTO users(UserFSearch) VALUES(?) WHERE idUsers = $UserID";
   mysqli_stmt_bind_param($stmt, "s", $PSearch);
    mysqli_stmt_execute($stmt);
 }
