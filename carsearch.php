@@ -17,10 +17,12 @@
      <form action="carsearch.php" method="POST">
        <input type="text" name="search" placeholder="Search">
        <button type="submit" name="submit-search">Search</button>
+       <button type='submit' name='favourite-search'>Favourite!</button>
      </div>
      </form>
 <div class="container" align="center">
 <?php
+$_SESSION['PSearch'] = $_POST['search'];
 $PSearch = $row['Searched'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
@@ -36,7 +38,7 @@ if ($bigqueryResult > 1) {
   while($row = mysqli_fetch_assoc($bigresult)) {
      echo "<div>
      <h3>Favourite Searched</h3>
-     $PSearch
+     <p>".$row['searched']."</p>
      </div>";
    }
   }
@@ -76,6 +78,7 @@ else {
   echo "There are no results matching your search!";
   }
 }
+
  ?>
 </div>
 </main>
