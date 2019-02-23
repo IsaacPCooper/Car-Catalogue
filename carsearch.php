@@ -25,12 +25,12 @@ $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
 if (isset($_SESSION['UserID'])){
-  $sql3 = "SELECT Searched, count(User_ID) FROM searches WHERE User_ID = $UserID GROUP BY count(User_ID) LIMIT 3";
+  $sql3 = "SELECT Searched, count(User_ID) FROM searches WHERE User_ID = $UserID GROUP BY count(User_ID)";
   $result3 = mysqli_query($conn ,$sql3);
   $queryResult3 = mysqli_num_rows($result3);
   if ($queryResult3 > 0) {
     while($row = mysqli_fetch_assoc($result3)) {
-  echo "<h3> Favourite searches</h3></br><p>".$row['Searched']."</p>";
+  echo "<h3> Favourite searches</h3> </br><p>".$row['Searched']."</p>";
   }
 }
 }
