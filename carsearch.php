@@ -28,13 +28,13 @@ $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
 $sql3 = "SELECT * FROM searched WHERE USER_ID = UserID";
-$result = mysqli_query($conn ,$sql);
-$queryResult = mysqli_num_rows($result);
+$bigresult = mysqli_query($conn ,$sql);
+$bigqueryResult = mysqli_num_rows($bigresult);
 
 
 
-if ($queryResult > 1) {
-  while($row = mysqli_fetch_assoc($result)) {
+if ($bigqueryResult > 1) {
+  while($row = mysqli_fetch_assoc($bigresult)) {
      echo "<div>
      <h3>Favourite Searched</h3>
      <p>".$row['searched']."</p>
