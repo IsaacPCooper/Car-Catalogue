@@ -24,6 +24,7 @@ if (isset($_POST['submit-search'])){
   $search = mysqli_real_escape_string($conn,$_POST['search']);
   $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
   $sql2 = "INSERT INTO users(UserPSearches) VALUES(['search'])";
+  $_SESSION['PSearch'] = ['search']
   $result = mysqli_query($conn,$sql);
   $queryResult = mysqli_num_rows($result);
 
@@ -44,6 +45,9 @@ if ($queryResult > 0) {
 else {
   echo "There are no results matching your search!";
   }
+}
+if (isset($_POST['favourite-search'])){
+  $sql3 = "INSERT INTO users(UserFSearch) VALUES($_SESSION['PSearch'])"
 }
  ?>
 </div>
