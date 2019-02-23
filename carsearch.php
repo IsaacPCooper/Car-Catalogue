@@ -26,7 +26,7 @@ if (isset($_POST['submit-search'])){
   $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
   $sql2 = "UPDATE searches SET user_ID='UserID', searched='search' WHERE UserID = 'UserID'";
   $_SESSION['PSearch'] = ['search'];
-  $stmt = mysqli_stmt_execute($conn ,$sql2);
+  $stmt = mysqli_stmt_init($conn ,$sql2);
   $result = mysqli_query($conn ,$sql);
   $queryResult = mysqli_num_rows($result);
 
