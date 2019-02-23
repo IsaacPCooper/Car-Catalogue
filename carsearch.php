@@ -21,9 +21,10 @@
 <?php
 if (isset($_POST['submit-search'])){
   $search = mysqli_real_escape_string($conn,$_POST['search']);
-$sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
-$result = mysqli_query($conn,$sql);
-$queryResult = mysqli_num_rows($result);
+  $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
+  $sql2 = "INSERT INTO users(UserPSearches) VALUES(['search'])";
+  $result = mysqli_query($conn,$sql);
+  $queryResult = mysqli_num_rows($result);
 
 if ($queryResult > 0) {
   while($row = mysqli_fetch_assoc($result)) {
