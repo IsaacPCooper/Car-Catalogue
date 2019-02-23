@@ -22,6 +22,7 @@
 <div class="container" align="center">
 <?php
 $_SESSION['PSearch'] = $_POST['search'];
+$PSearch = $_SESSION['PSearch'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
@@ -61,7 +62,7 @@ else {
 if (isset($_POST['favourite-search'])){
   $SQL3 = "INSERT INTO users(UserFSearch) VALUES (?)";
   $stmt = mysqli_stmt_init($conn);
-  mysqli_stmt_bind_param($stmt, "s", 'PSearch');
+  mysqli_stmt_bind_param($stmt, "s", $PSearch);
    mysqli_stmt_execute($stmt);
 }
  ?>
