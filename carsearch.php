@@ -25,7 +25,7 @@ $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
 if (isset($_SESSION['UserID'])){
-  $sql3 = "SELECT Searched, count(User_ID) FROM searches WHERE User_ID = $UserID GROUP BY count(User_ID)";
+  $sql3 = "SELECT Searched FROM searches WHERE User_ID = $UserID GROUP BY count(User_ID)";
   $result3 = mysqli_query($conn ,$sql3);
   $queryResult3 = mysqli_num_rows($result3);
   if ($queryResult3 > 0) {
