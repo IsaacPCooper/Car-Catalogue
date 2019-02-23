@@ -49,6 +49,7 @@ else {
 }
 if (isset($_POST['favourite-search'])){
   $sql3 = "UPDATE users(UserFSearch) VALUES(['PSearch']) WHERE UserID = 'UserID'";
+  $stmt = mysqli_stmt_execute($conn ,$sql3);
 }
  ?>
 </div>
