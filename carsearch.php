@@ -5,7 +5,7 @@
  $UserID = $_SESSION['UserID'];
  //Checks if user is logged in
  if(!isset($_SESSION['UserID'])){
-   header("Location:Login.php");
+   header("Location:login.php");
  }
  ?>
    <!--Navbar end-->
@@ -21,22 +21,13 @@
      </form>
 <div class="container" align="center">
 <?php
-$_SESSION['PSearch'] = $_POST['search'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
 if (isset($_SESSION['UserID'])){
-  $sql3 = "SELECT Searched, count(User_ID) FROM searches WHERE User_ID = UserID GROUP BY count(User_ID) LIMIT 3;"
+  $sql3 = "SELECT Searched, count(User_ID) FROM searches WHERE User_ID = UserID GROUP BY count(User_ID) LIMIT 3";
   $output = mysqli_query($sql3,$conn);
-
-
-if ($bigqueryResult > 1) {
-  while($row = mysqli_fetch_assoc($bigresult)) {
-     echo "<div>
-     <h3>Favourite Searched</h3>
-     <p>".$row['searched']."</p>
-     </div>";
-   }
+  echo "<h3> Favourite searches</h3> </br>", "<p>".$output."</p>";
   }
 
 
