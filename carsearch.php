@@ -38,10 +38,10 @@ if ($queryResult > 0) {
      <p>".$row['carSize']."</p>
      <p>".$row['carFuel']."</p>
      </div>";
+   }
   }
-}
 else {
-  echo "There are no results matching your search!"
+  echo "There are no results matching your search!";
   }
 }
  ?>
