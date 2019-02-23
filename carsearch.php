@@ -21,13 +21,13 @@
      </form>
 <div class="container" align="center">
 <?php
+$PSearch = $_SESSION['PSearch'];
+$_SESSION['PSearch'] = ['search'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 if (isset($_POST['submit-search'])){
   $search = mysqli_real_escape_string($conn,$_POST['search']);
   $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
-
-  $_SESSION['PSearch'] = ['search'];
   $result = mysqli_query($conn ,$sql);
   $queryResult = mysqli_num_rows($result);
 
@@ -59,8 +59,10 @@ else {
   }
 }
 if (isset($_POST['favourite-search'])){
-  $sql3 = "UPDATE users SET UserFSearch = (['PSearch']) WHERE UserID = 'UserID'";
-  $stmt = mysqli_stmt_execute($conn ,$sql3);
+  $SQL3 = "INSERT INTO users (UserFSearch) VALUES (?)"
+  $stmt = mysqli_stmt_init($conn);
+  mysqli_stmt_bind_param($stmt, "s", $PSearch);
+   mysqli_stmt_execute($stmt);
 }
  ?>
 </div>
