@@ -8,14 +8,14 @@
      <body>
      <h1 align="center">View our products</h1>
      <div class="carCard container">
-     <form action="carsearch.php" method="post">
+     <form action="carsearch.php" method="POST">
        <input type="text" name="search" placeholder="Search">
        <button type="submit" name="submit-search">Search</button>
      </div>
      </form>
 <div class="container" align="center">
 <?php
-if (isset($_post['submit-search'])){
+if (isset($_POST['submit-search'])){
   $search = mysqli_real_escape_string($conn,$_POST['search']);
 $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
 $result = mysqli_query($conn,$sql);
