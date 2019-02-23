@@ -30,8 +30,10 @@ if (isset($_SESSION['UserID'])){
   $queryResult3 = mysqli_num_rows($result3);
   if ($queryResult3 > 0) {
     while($row = mysqli_fetch_assoc($result3)) {
-  echo "<h3> Favourite searches</h3> </br>", "<p>".$row['Searched']."</p>";
+  echo "<h3> Favourite searches</h3></br><p>".$row['Searched']."</p>";
   }
+}
+}
 
 
 
