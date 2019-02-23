@@ -47,7 +47,7 @@ else {
   }
 }
 if (isset($_POST['favourite-search'])){
-  $sql3 = "INSERT INTO users(UserFSearch) VALUES($_SESSION['PSearch'])"
+  $sql3 = "INSERT INTO users(UserFSearch) VALUES($_SESSION['PSearch'])";
 }
  ?>
 </div>
