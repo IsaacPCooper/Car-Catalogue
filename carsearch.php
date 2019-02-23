@@ -36,7 +36,7 @@ if ($bigqueryResult > 1) {
   while($row = mysqli_fetch_assoc($bigresult)) {
      echo "<div>
      <h3>Favourite Searched</h3>
-     <p>"$PSearch"</p>
+     $PSearch
      </div>";
    }
   }
