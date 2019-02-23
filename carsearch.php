@@ -27,7 +27,7 @@ $keyword = $_POST['search'];
 if (isset($_SESSION['UserID'])){
   $sql3 = "SELECT Searched, count(User_ID) FROM searches WHERE User_ID = UserID GROUP BY count(User_ID) LIMIT 3";
   $output = mysqli_query($sql3,$conn);
-  echo "<h3> Favourite searches</h3> </br>", "<p>".$output."</p>";
+  echo "<h3> Favourite searches</h3> </br>", "<p>".$row['Searched']."</p>";
   }
 
 
