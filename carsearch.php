@@ -31,13 +31,13 @@ if (isset($_POST['submit-search'])){
   $result = mysqli_query($conn ,$sql);
   $queryResult = mysqli_num_rows($result);
 
-  $sql2 = "INSERT INTO searches (User_ID, searched) VALUES (?, ?)";
+  $sql2 = "INSERT INTO searches (User_ID, SearchID, Searched) VALUES (?,?,?)";
                      $stmt = mysqli_stmt_init($conn);
                      if (!mysqli_stmt_prepare($stmt, $sql2)) {
                        header("Location: ../carsearch.php?error=sqlerror01");
                        exit();
                      }
-                     mysqli_stmt_bind_param($stmt, "ss", $keyword, $id);
+                     mysqli_stmt_bind_param($stmt, "ss",$id,$keyword);
                      mysqli_stmt_execute($stmt);
 
 if ($queryResult > 0) {
@@ -66,6 +66,7 @@ if (isset($_POST['favourite-search'])){
 }
  ?>
 </div>
+</main>
 <?php
 require "includes/footer.php";
  ?>
