@@ -21,25 +21,13 @@
      </form>
 <div class="container" align="center">
 <?php
-$_SESSION['PSearch'] = $_POST['search'];
-$PSearch = $row['Searched'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
 if (isset($_SESSION['UserID'])){
-$sql3 = "SELECT * FROM searches WHERE UserID = User_ID";
-$bigresult = mysqli_query($conn ,$sql3);
-$bigqueryResult = mysqli_num_rows($bigresult);
-}
-
-
-if ($bigqueryResult > 1) {
-  while($row = mysqli_fetch_assoc($bigresult)) {
-     echo "<div>
-     <h3>Favourite Searched</h3>
-     <p>".$row['searched']."</p>
-     </div>";
-   }
+  $sql3 = "SELECT Searched, count(User_ID) FROM searches WHERE User_ID = UserID GROUP BY count(User_ID) LIMIT 3";
+  $output = mysqli_query($sql3,$conn);
+  echo "<h3> Favourite searches</h3> </br>",  $output;
   }
 
 
