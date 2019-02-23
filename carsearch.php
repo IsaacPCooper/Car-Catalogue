@@ -23,9 +23,26 @@
 <div class="container" align="center">
 <?php
 $_SESSION['PSearch'] = $_POST['search'];
-$PSearch = $_SESSION['PSearch'];
+$PSearch = $row['Searched'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
+
+$sql3 = "SELECT * FROM searched WHERE USER_ID = UserID";
+$result = mysqli_query($conn ,$sql);
+$queryResult = mysqli_num_rows($result);
+
+
+
+if ($queryResult > 1) {
+  while($row = mysqli_fetch_assoc($result)) {
+     echo "<div>
+     <h3>Favourite Searched</h3>
+     <p>".$row['searched']."</p>
+     </div>";
+   }
+  }
+
+
 
 if (isset($_POST['submit-search'])){
   $search = mysqli_real_escape_string($conn,$_POST['search']);
