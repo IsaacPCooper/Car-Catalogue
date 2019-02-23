@@ -21,7 +21,6 @@
      </form>
 <div class="container" align="center">
 <?php
-$_SESSION['PSearch'] = $_POST['search'];
 $PSearch = $row['Searched'];
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
@@ -37,7 +36,7 @@ if ($bigqueryResult > 1) {
   while($row = mysqli_fetch_assoc($bigresult)) {
      echo "<div>
      <h3>Favourite Searched</h3>
-     <p>".$row['searched']."</p>
+     <p>"$PSearch"</p>
      </div>";
    }
   }
