@@ -31,7 +31,7 @@ if (isset($_SESSION['UserID'])){
 $sql3 = "SELECT * FROM searches WHERE UserID = User_ID";
 $bigresult = mysqli_query($conn ,$sql3);
 $bigqueryResult = mysqli_num_rows($bigresult);
-
+}
 
 
 if ($bigqueryResult > 1) {
