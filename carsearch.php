@@ -60,8 +60,8 @@ else {
   }
 }
 if (isset($_POST['favourite-search'])){
-  $SQL3 = "INSERT INTO users(UserFSearch) VALUES (?)";
   $stmt = mysqli_stmt_init($conn);
+  $SQL3 = "INSERT INTO users(UserFSearch) VALUES (?)";
   mysqli_stmt_bind_param($stmt, "s", $PSearch);
    mysqli_stmt_execute($stmt);
 }
