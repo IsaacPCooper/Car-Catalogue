@@ -1,6 +1,7 @@
 <?php
  require "includes/header.php";
  include 'includes/dbConnect.php';
+ session_start();
  //Checks if user is logged in
  if(!isset($_SESSION['UserID'])){
    header("Location:Login.php");
