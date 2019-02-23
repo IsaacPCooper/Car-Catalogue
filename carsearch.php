@@ -15,6 +15,7 @@
      <form action="carsearch.php" method="POST">
        <input type="text" name="search" placeholder="Search">
        <button type="submit" name="submit-search">Search</button>
+       <button type='submit' name='favourite-search'>Favourite!</button>
      </div>
      </form>
 <div class="container" align="center">
