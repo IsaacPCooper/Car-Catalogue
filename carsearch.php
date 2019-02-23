@@ -31,7 +31,7 @@ if (isset($_POST['submit-search'])){
   $result = mysqli_query($conn ,$sql);
   $queryResult = mysqli_num_rows($result);
 
-  $sql2 = "INSERT INTO searches (User_ID, SearchID, Searched) VALUES (?,?,?)";
+  $sql2 = "INSERT INTO searches (User_ID,Searched) VALUES (?,?)";
                      $stmt = mysqli_stmt_init($conn);
                      if (!mysqli_stmt_prepare($stmt, $sql2)) {
                        header("Location: ../carsearch.php?error=sqlerror01");
