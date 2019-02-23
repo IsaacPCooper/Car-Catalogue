@@ -24,7 +24,7 @@
 if (isset($_POST['submit-search'])){
   $search = mysqli_real_escape_string($conn,$_POST['search']);
   $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
-  $sql2 = "INSERT INTO users(UserPSearches) VALUES(['search'])";
+  $sql2 = "UPDATE users(UserPSearches) VALUES(['search']) WHERE UserID = 'UserID'";
   $_SESSION['PSearch'] = ['search'];
   $result = mysqli_query($conn ,$sql);
   $queryResult = mysqli_num_rows($result);
@@ -48,7 +48,7 @@ else {
   }
 }
 if (isset($_POST['favourite-search'])){
-  $sql3 = "INSERT INTO users(UserFSearch) VALUES(['PSearch'])";
+  $sql3 = "UPDATE users(UserFSearch) VALUES(['PSearch']) WHERE UserID = 'UserID'";
 }
  ?>
 </div>
