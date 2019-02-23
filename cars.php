@@ -8,7 +8,7 @@
          <body>
          <h1 align="center">View our products</h1>
          <div class="carCard container">
-         <form action="search.php" method="post">
+         <form action="incldes/search.inc.php" method="post">
            <input type="text" name="search" placeholder="Search">
            <button type="submit" name="submit-search">Search</button>
          </div>
