@@ -26,7 +26,7 @@ $keyword = $_POST['search'];
 
 if (isset($_SESSION['UserID'])){
   $sql3 = "SELECT Searched, count(User_ID) FROM searches WHERE User_ID = UserID GROUP BY count(User_ID) LIMIT 3";
-  $output = mysqli_query($sql3,$conn);
+  $stmt3 = mysqli_stmt_init($conn,$sql3);
   echo "<h3> Favourite searches</h3> </br>", "<p>".$output."</p>";
   }
 
@@ -39,6 +39,7 @@ if (isset($_POST['submit-search'])){
   $queryResult = mysqli_num_rows($result);
 
   $sql2 = "INSERT INTO searches (User_ID,Searched) VALUES (?,?)";
+
                      $stmt = mysqli_stmt_init($conn);
                      if (!mysqli_stmt_prepare($stmt, $sql2)) {
                        header("Location: ../carsearch.php?error=sqlerror01");
