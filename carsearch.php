@@ -32,7 +32,7 @@ if ($result3):
       foreach ($datas as $data){
         echo "<div>
         <h3> Favourite Search:</h3>
-         ".$data['Searched']."
+         <h4>".$data['Searched']."</h4>
          <br>";
        }
 
