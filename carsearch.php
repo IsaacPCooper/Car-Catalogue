@@ -33,10 +33,13 @@ if ($result3):
       $datas[] = $row;
 
 
-
-
-
 if (isset($_POST['submit-search'])){
+  foreach ($datas as $data){
+    echo "<div>
+    <h3> Favourite Search:</h3>
+     ".$data['Searched']."
+     <br>";
+   }
   $search = mysqli_real_escape_string($conn,$_POST['search']);
   $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
   $result = mysqli_query($conn ,$sql);
@@ -71,12 +74,6 @@ else {
   echo "There are no results matching your search!";
   }
 }
-foreach ($datas as $data){
-  echo "<div>
-  <h3> Favourite Search:</h3>
-   ".$data['Searched']."
-   <br>";
- }
 endwhile;
 endif;
 endif;
