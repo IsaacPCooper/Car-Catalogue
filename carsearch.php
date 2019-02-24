@@ -24,7 +24,7 @@
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
-$sql3 = "SELECT * FROM searches WHERE User_ID = $id GROUP BY searches ORDER BY COUNT(*) Desc limit 1";
+$sql3 = "SELECT * FROM searches WHERE User_ID = $id GROUP BY Searched ORDER BY COUNT(*) Desc limit 1";
 $result3 = mysqli_query($conn,$sql3);
 $datas = array();
 if ($result3):
