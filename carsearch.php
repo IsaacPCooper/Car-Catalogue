@@ -22,7 +22,7 @@
 <div class="container" align="center">
 <?php
 $keyword = $_POST['search'];
-$sql3 = "SELECT * FROM searches WHERE User_ID = $UserID GROUP BY Searched ORDER BY COUNT(*) Desc limit 1";
+$sql3 = "SELECT Searched FROM searches WHERE User_ID = $UserID GROUP BY Searched ORDER BY COUNT(*) Desc limit 1";
 $result3 = mysqli_query($conn,$sql3);
 $datas = array();
 if ($result3):
