@@ -31,12 +31,8 @@ if ($result3):
   if (mysqli_num_rows($result3) > 0):
     while ($row = mysqli_fetch_assoc($result3)):
       $datas[] = $row;
-      foreach ($datas as $data) {
-        echo "<div>
-        <h3> Favourite Search:</h3>
-         ".$data['Searched'].";
-         <br>"
-      }
+
+
 
 
 
@@ -68,16 +64,22 @@ if ($queryResult > 0) {
      <p>".$row['carSize']."</p>
      <p>".$row['carFuel']."</p>
      </div>";
+
    }
   }
 else {
   echo "There are no results matching your search!";
   }
 }
+foreach ($datas as $data){
+  echo "<div>
+  <h3> Favourite Search:</h3>
+   ".$data['Searched']."
+   <br>";
+ }
 endwhile;
 endif;
 endif;
-
  ?>
 </div>
 </main>
