@@ -21,10 +21,9 @@
      </form>
 <div class="container" align="center">
 <?php
-$id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
-$sql3 = "SELECT * FROM searches WHERE User_ID = $id GROUP BY Searched ORDER BY COUNT(*) Desc limit 1";
+$sql3 = "SELECT * FROM searches WHERE User_ID = $UserID GROUP BY Searched ORDER BY COUNT(*) Desc limit 1";
 $result3 = mysqli_query($conn,$sql3);
 $datas = array();
 if ($result3):
@@ -34,11 +33,6 @@ if ($result3):
 
 
 if (isset($_POST['submit-search'])){
-  foreach ($datas as $data){
-    echo "<div>
-    <h3> Favourite Search:</h3>
-     ".$data['Searched']."
-     <br>";
    }
   $search = mysqli_real_escape_string($conn,$_POST['search']);
   $sql = "SELECT * FROM cars WHERE carName LIKE '%$search%'OR carMake LIKE '%$search%'OR carYear LIKE '%$search%'OR carType LIKE '%$search%'OR carSize LIKE '%$search%' OR carFuel LIKE '%$search%'";
