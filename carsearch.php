@@ -22,7 +22,6 @@
 <div class="container" align="center">
 <?php
 $keyword = $_POST['search'];
-
 $sql3 = "SELECT * FROM searches WHERE User_ID = $UserID GROUP BY Searched ORDER BY COUNT(*) Desc limit 1";
 $result3 = mysqli_query($conn,$sql3);
 $datas = array();
@@ -30,7 +29,12 @@ if ($result3):
   if (mysqli_num_rows($result3) > 0):
     while ($row = mysqli_fetch_assoc($result3)):
       $datas[] = $row;
-
+      foreach ($datas as $data){
+        echo "<div>
+        <h3> Favourite Search:</h3>
+         ".$data['Searched']."
+         <br>";
+       }
 
 if (isset($_POST['submit-search'])){
 
