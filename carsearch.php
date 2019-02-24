@@ -32,8 +32,10 @@ if ($result3):
     while ($row = mysqli_fetch_assoc($result3)):
       $datas[] = $row;
       foreach ($datas as $data) {
-        echo $data['Searched'];
-        echo "<br>"
+        echo "<div>
+        <h3> Favourite Search:</h3>
+         ".$data['Searched'].";
+         <br>"
       }
 
 
