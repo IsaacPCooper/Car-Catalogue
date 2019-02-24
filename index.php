@@ -10,8 +10,8 @@
            <img align ="center" width="50% "height="50%" src="assets/img/money.jpeg">
       <?php
            if (isset($_SESSION['UserID'])) {
-             $sql = "SELECT Searched FROM searches WHERE User_ID HAVING COUNT(*) > 2";
-             $result = mysqli_query($conn,$sql);
+             $fav= "SELECT * FROM searches GROUP BY User_ID order by Count(*) desc limit 1;"
+             $result = mysqli_query($conn,$fav);
              var_dump($result);
              echo "<h3> You are Logged In! </h3>";
              echo "<h4> Welcome, ".$_SESSION['UserFName']." !</h4>";
