@@ -29,7 +29,7 @@
 <!--DOB Input w/ Label-->
 <div class="input-group">
 <label>Date Of Birth</label>
-<input type="text" name="editDOB" pattern="[0-9 .]+" title="Error! Number + / only field" class="validate">
+<input type="text" name="editDOB" pattern="[0-9 /]+" title="Error! Number + / only field" class="validate">
 </div>
 <div align="center" class="input-group">
   <button type="submit" name="edit-user" class="btn">Edit Details</button>
