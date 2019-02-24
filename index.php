@@ -10,12 +10,20 @@
            <img align ="center" width="50% "height="50%" src="assets/img/money.jpeg">
       <?php
            if (isset($_SESSION['UserID'])) {
-             $fav= "SELECT * FROM searches GROUP BY User_ID order by Count(*) desc limit 1;"
-             $result = mysqli_query($conn,$fav);
-             var_dump($result);
+             $fav= "SELECT * FROM searches WHERE User_ID = $id GROUP BY Searched ORDER by COUNT(*) Desc limit 1;"
+             $sresult = mysqli_query($conn, $fav);
+             $datas = array();
+           if ($sresult):
+             if (mysqli_num_rows($sresult) > 0):
+              while ($row = mysqli_fetch_assoc($sresult)):
+                $datas[] = $row;
+                foreach ($datas as $data){
+                  echo $data['Searched'];
+                  echo"<br>";
+                }
              echo "<h3> You are Logged In! </h3>";
              echo "<h4> Welcome, ".$_SESSION['UserFName']." !</h4>";
-             echo "<p> Your favourite search items are:",$result,"</p>";
+
            }
            else {
              echo "<h3> Please Log In to Continue </h3>";
