@@ -24,16 +24,17 @@
 $id = $_SESSION['UserID'];
 $keyword = $_POST['search'];
 
-if (isset($_SESSION['UserID'])){
-  $sql3 = "SELECT Searched FROM searches WHERE User_ID = $UserID GROUP BY count(User_ID)";
-  $result3 = mysqli_query($conn ,$sql3);
-  $queryResult3 = mysqli_num_rows($result3);
-  if ($queryResult3 > 0) {
-    while($row = mysqli_fetch_assoc($result3)) {
-  echo "<h3> Favourite searches</h3> </br><p>".$row['Searched']."</p>";
-  }
-}
-}
+$sql3 = "SELECT * FROM searches WHERE User_ID = $id GROUP BY searches ORDER BY COUNT(*) Desc limit 1";
+$result3 = mysqli_query($conn,$sql3);
+$datas = array();
+if ($result3):
+  if (mysqli_num_rows($result3) > 0):
+    while ($row = mysqli_fetch_assoc($result3)):
+      $datas[] = $row;
+      foreach ($datas as $data) {
+        echo $data['Searched'];
+        echo "<br>"
+      }
 
 
 
@@ -71,6 +72,9 @@ else {
   echo "There are no results matching your search!";
   }
 }
+endwhile;
+endif;
+endif;
 
  ?>
 </div>
