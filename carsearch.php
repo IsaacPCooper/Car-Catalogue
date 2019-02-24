@@ -15,7 +15,7 @@
      <h1 align="center">View our products</h1>
      <div class="carCard container">
      <form action="carsearch.php" method="POST">
-       <input type="text" name="search" placeholder="Search">
+       <input type="text" name="search" placeholder="Search"  pattern="[0-9 A-Za-z]+" title="Error! Field is empty, or has invalid characters!" class="validate" placeholder="Search">
        <button align="center" type="submit" name="submit-search">Search</button>
      </div>
      </form>
