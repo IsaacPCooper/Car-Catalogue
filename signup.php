@@ -14,22 +14,22 @@
   <div class="container">
 <div class="input-group">
   <label>First Name</label>
-  <input type="text" name="UserFName">
+  <input type="text" name="UserFName" pattern="[A-Za-z ]+" title="Error! Letters only field" class="validate">
 </div>
   <!--Second Name Input w/ Label-->
 <div class="input-group">
   <label>Second Name</label>
-  <input type="text" name="UserSName">
+  <input type="text" name="UserSName"  pattern="[A-Za-z ]+" title="Error! Letters only field" class="validate">
 </div>
 <!--Phone Input w/ Label-->
 <div class="input-group">
 <label>Phone Number</label>
-<input type="text" name="UserPhone">
+<input type="text" name="UserPhone" pattern="[0-9]+" title="Error! Number only field" class="validate">
 </div>
   <!--DOB Input w/ Label-->
 <div class="input-group">
   <label>Date Of Birth</label>
-  <input type="text" name="UserDOB">
+  <input type="text" name="UserDOB" pattern="[0-9 /]+" title="Error!Numbers and / only field" class="validate">
 </div>
   <!--Email Input w/ Label-->
 <div class="input-group">
@@ -38,8 +38,8 @@
 </div>
 <!--Address Input w/ Label-->
 <div class="input-group">
-<label>Adress</label>
-<input type="text" name="UserAddress">
+<label>Address</label>
+<input type="text" name="UserAddress" pattern="[A-Za-z]+" title="Error! Letters only field" class="validate">
 </div>
 <!--Postcode Input w/ Label-->
 <div class="input-group">
