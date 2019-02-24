@@ -10,7 +10,14 @@
            <img align ="center" width="50% "height="50%" src="assets/img/money.jpeg">
       <?php
            if (isset($_SESSION['UserID'])) {
-             $sql = "SELECT Searched FROM searches WHERE COUNT(Searched) > 2";
+             $sql = "SELECT Searched
+             FROM searches
+             INNER JOIN(
+             SELECT UserID
+             FROM users
+             GROUP BY Searched
+             HAVING COUNT(UserID)> 1
+           )";
              $result = mysqli_query($conn,$sql);
              var_dump($result);
              echo "<h3> You are Logged In! </h3>";
