@@ -1,4 +1,7 @@
 # Car Catalogue Website [PHP + SQL]
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png"  height="96" width="124"
+     alt="PHP Logo"/>
+     
 A Website created to demonstrate an understanding of PHP post, and SQL implimentation with hashing practises.
 
 ## How to view the project
