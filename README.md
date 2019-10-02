@@ -3,7 +3,9 @@ A Website created to demonstrate an understanding of PHP post, and SQL impliment
 
 ## How to view the project
 
-URL: jpacarweb.herokuapp.com
+[Click Here](https://jpacarweb.herokuapp.com) - Link directly to the site.
+OR
+Enter This URL: https://jpacarweb.herokuapp.com
 
 ## Built With
 
