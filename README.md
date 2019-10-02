@@ -4,9 +4,14 @@ A Website created to demonstrate an understanding of PHP post, and SQL impliment
 ## How to view the project
 
 * [Click Here](https://jpacarweb.herokuapp.com) - Link directly to the site.
-OR
 * Enter This URL: https://jpacarweb.herokuapp.com
 
+### Features
+* HTTP Cookies
+* UserID Session interaction (hide elements unless the user is logged in)
+* SQLDatabase Data input and manipulation. (Register + Login System)
+* Data Hashing (password hashing)
+* URL Checking (cannot just type /x.php to access pages, if no ID is set, you will return to the front page.)
 ## Built With
 
 * [Atom IDE](https://ide.atom.io/) - Lightweight IDE for web development.
